@@ -1,0 +1,107 @@
+/*
+ *= require fonts
+ */
+
+@import "compass/css3/transform";
+@import "compass/css3/animation";
+
+h2 {
+  font-family: "Glober xBold";
+  color: #FF2B06;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.menu {
+  .menu-title {
+    position: relative;
+    top: 170px;
+    text-align: center;
+    color: transparent;
+    line-height: 33px;
+  }
+
+  .menu-hint {
+    line-height: 33px;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .main-ball {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}
+
+.banner {
+  width: 300px;
+  height: 219px;
+  background: url('../img/banner.png') no-repeat;
+  margin: 0 auto;
+}
+
+.concept {
+  position: relative;
+  left: 460px;
+  margin-top: -450px;
+
+  ul {
+    list-style: none;
+    float: left;
+  }
+
+  .little-ball { opacity: 0; }
+
+  .first-column {
+    margin-top: 75px;
+
+    .first-ball { @include transform(rotate(50deg)); }
+    .last-ball { @include transform(rotate(215deg)); }
+  }
+
+  .middle-column {
+    .third-ball { @include transform(rotate(-135deg)); }
+    .last-ball { margin-top: 50px; }
+  }
+
+  .last-column {
+    margin-top: 242px;
+
+    .last-ball { @include transform(rotate(-35deg)); }
+  }
+
+  .little-ball { margin-bottom: 25px; }
+
+  .dots-net {
+    display: block;
+    width: 300px;
+    height: 400px;
+
+    position: relative;
+    top: -38px;
+    left: -280px;
+    z-index: -1;
+  }
+}
+
+#up-right {
+  width: 380px;
+  height: 220px;
+  z-index: -10;
+
+  .texto {
+    background: url("../img/revo-silenciosa.jpg") no-repeat;
+    width: 380px;
+    height: 220px;
+  }
+}
+
+#bottom-right, #up-left, #bottom-left {
+  @extend #up-right;
+}
