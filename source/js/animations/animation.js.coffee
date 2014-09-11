@@ -13,7 +13,6 @@ class Animation
 
 class window.ConceptAnimation extends Animation
   animate: ->
-    $("#{@sectionSelector}").show()
     TweenMax.to(
       "#{@sectionSelector} .first-column .last-ball", 0.3, {
         opacity: 1, scale: 1.3,
@@ -27,8 +26,8 @@ class window.ConceptAnimation extends Animation
     line1Drawing = new Drawing(@snap, this._dottedLine(0, 380, 60, 325), '', 800)
     line2Drawing = new Drawing(@snap, this._dottedLine(73, 320, 77, 130), '', 800)
     line3Drawing = new Drawing(@snap, this._dottedLine(75, 137, 145, 90), '', 800)
-    line4Drawing = new Drawing(@snap, this._dottedLine(73, 314, 150, 260), '', 800)
-    line5Drawing = new Drawing(@snap, this._dottedLine(160, 250, 230, 300), '', 800)
+    line4Drawing = new Drawing(@snap, this._dottedLine(66, 325, 150, 268), '', 800)
+    line5Drawing = new Drawing(@snap, this._dottedLine(158, 260, 230, 300), '', 800)
     line1Drawing.callOnFinished = ->
       line2Drawing.initDraw()
       line4Drawing.initDraw()
@@ -36,8 +35,8 @@ class window.ConceptAnimation extends Animation
       line3Drawing.initDraw()
     line4Drawing.callOnFinished = ->
       line5Drawing.initDraw()
-    line5Drawing.callOnFinished = ->
-      $('#up-right').fadeIn()
+    line5Drawing.callOnFinished = =>
+      $("#{@sectionSelector}-body").fadeIn()
 
     line1Drawing.initDraw()
 

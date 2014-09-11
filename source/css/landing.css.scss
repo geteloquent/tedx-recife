@@ -4,9 +4,13 @@
 
 @import "compass/css3/transform";
 @import "compass/css3/animation";
+@import "compass/typography/text/replacement";
 
-h2 {
-  font-family: "Glober xBold";
+body {
+  font-family: "Glober";
+}
+
+h2, strong {
   color: #FF2B06;
 }
 
@@ -18,7 +22,7 @@ h2 {
 .menu {
   .menu-title {
     position: relative;
-    top: 170px;
+    top: 500px;
     text-align: center;
     color: transparent;
     line-height: 33px;
@@ -49,7 +53,7 @@ h2 {
 .concept {
   position: relative;
   left: 460px;
-  margin-top: -450px;
+  top: -455px;
 
   ul {
     list-style: none;
@@ -90,18 +94,36 @@ h2 {
   }
 }
 
-#up-right {
-  width: 380px;
-  height: 220px;
-  z-index: -10;
+.concept-body {
+  width: 700px;
+  background: image-url('silent-revolutions.png') no-repeat right bottom;
 
-  .texto {
-    background: url("../img/revo-silenciosa.jpg") no-repeat;
-    width: 380px;
-    height: 220px;
+  .title {
+    margin-bottom: 30px;
+    margin-top: -10px;
+
+    $height: 56px;
+
+    .logo {
+      display: block;
+      @include replace-text-with-dimensions('logo.png', 249, $height);
+      float: left;
+      margin-right: 10px;
+    }
+
+    .year {
+      display: block;
+      height: $height;
+      font-size: 1.2em;
+      font-weight: normal;
+      float: left;
+      margin: 0 5px;
+    }
+
+    .star {
+      @include replace-text-with-dimensions('star.png', 16, 16);
+      float: left;
+      margin-top: 15px;
+    }
   }
-}
-
-#bottom-right, #up-left, #bottom-left {
-  @extend #up-right;
 }

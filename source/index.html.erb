@@ -3,49 +3,14 @@ title: HTML5 Boilerplate Middleman
 ---
 
 <div id="impress">
-  <div  id="bored" class="step main clearfix" data-x="0" data-y="0">
+  <section  id="main-section" class="step main clearfix" data-x="0" data-y="0">
     <div class="menu">
       <h2 class="menu-title">Conceito 2014</h2>
       <svg class="main-ball"></svg>
       <p class="menu-hint">passe o mouse</p>
     </div>
-    <div class="concept clearfix" style="display: none">
-      <ul class="first-column">
-        <li class="little-ball first-ball">
-          <span class="pie">4,7</span>
-        </li>
-        <li class="little-ball">
-          <span class="pie">1/2</span>
-        </li>
-        <li class="little-ball last-ball">
-          <span class="pie">4,2,4</span>
-        </li>
-      </ul>
-      <ul class="middle-column">
-        <li class="little-ball">
-          <span class="pie">4,2,1,2</span>
-        </li>
-        <li class="little-ball">
-          <span class="pie">4,7</span>
-        </li>
-        <li class="little-ball third-ball">
-          <span class="pie">3/4</span>
-        </li>
-        <li class="little-ball last-ball">
-          <span class="pie last-ball">10</span>
-        </li>
-      </ul>
-      <ul class="last-column">
-        <li class="little-ball last-ball">
-          <span class="pie">1,4,4,1</span>
-        </li>
-      </ul>
-      <svg class="dots-net"></svg>
-    </div>
+    <%= partial 'concept/animation' %>
     <div class="banner"></div>
-  </div>
-  <div class="step" id="up-right" data-x="460" data-y="-220" style="display: none;">
-    <div class="texto">
-    </div>
-  </div>
+  </section>
+  <%= partial 'concept/body' %>
 </div>

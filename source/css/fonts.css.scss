@@ -1,4 +1,4 @@
 @import "compass/css3/font-face";
 
-@include font-face("Glober xBold", font-files("fontfabric-glober-xbold.otf"));
-
+@include font-face("Glober", font-files("fontfabric-globerregular.otf"), $weight: normal, $style: normal);
+@include font-face("Glober", font-files("fontfabric-glober-xbold.otf"), $weight: bold, $style: normal);

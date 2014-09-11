@@ -33,7 +33,7 @@ class window.OpeningAnimation
         stroke: '#ff2b06'
       }).data({
         title: 'TEDxRecife 2014',
-        step: 'up-right'
+        step: 'concept-section'
       })
     contactRect = @snap.rect(@center.x, @center.y + @side, @side, @side)
       .attr({
@@ -59,6 +59,8 @@ class window.OpeningAnimation
     menuSelector = @menuSelector
     $.each discs.selectAll('rect'), ->
       this.hover ->
+        $("#{menuSelector} .menu-hint").css('opacity', 0)
+
         hoveredItem = this
         $.each this.parent().selectAll('rect'), ->
           if this == hoveredItem
@@ -92,14 +94,15 @@ class window.OpeningAnimation
 
   _starAnimation: ->
     TweenMax.to(
-      "#{@menuSelector} .main-ball", 3, { scale: 3 }
+      "#{@menuSelector} .main-ball", 3,
+      { scale: 3, marginTop: '350px' }
     ).delay(3)
 
     TweenMax.fromTo(
       ".banner", 3,
-      { opacity: 1, marginTop: '100px' },
+      { opacity: 1, marginTop: '-300px' },
       {
-        opacity: 0, marginTop: '-230px', scale: 0.3,
+        opacity: 0, marginTop: '-700px', scale: 0.3,
         onComplete: ->
          this.target.remove()
       }
