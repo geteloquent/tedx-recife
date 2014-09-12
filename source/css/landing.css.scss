@@ -65,19 +65,19 @@ h2, strong {
   .first-column {
     margin-top: 75px;
 
-    .first-ball { @include transform(rotate(50deg)); }
-    .last-ball { @include transform(rotate(215deg)); }
+    .first-ball .peity { @include transform(rotate(50deg)); }
+    .last-ball .peity { @include transform(rotate(215deg)); }
   }
 
   .middle-column {
-    .third-ball { @include transform(rotate(-135deg)); }
+    .third-ball .peity { @include transform(rotate(-135deg)); }
     .last-ball { margin-top: 50px; }
   }
 
   .last-column {
     margin-top: 242px;
 
-    .last-ball { @include transform(rotate(-35deg)); }
+    .last-ball .peity { @include transform(rotate(-35deg)); }
   }
 
   .little-ball { margin-bottom: 25px; }

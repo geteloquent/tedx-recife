@@ -26,8 +26,8 @@ class window.ConceptAnimation extends Animation
     line1Drawing = new Drawing(@snap, this._dottedLine(0, 380, 60, 325), '', 800)
     line2Drawing = new Drawing(@snap, this._dottedLine(73, 320, 77, 130), '', 800)
     line3Drawing = new Drawing(@snap, this._dottedLine(75, 137, 145, 90), '', 800)
-    line4Drawing = new Drawing(@snap, this._dottedLine(66, 325, 150, 268), '', 800)
-    line5Drawing = new Drawing(@snap, this._dottedLine(158, 260, 230, 300), '', 800)
+    line4Drawing = new Drawing(@snap, this._dottedLine(64, 318, 152, 260), '', 800)
+    line5Drawing = new Drawing(@snap, this._dottedLine(177, 260, 230, 297), '', 800)
     line1Drawing.callOnFinished = ->
       line2Drawing.initDraw()
       line4Drawing.initDraw()
