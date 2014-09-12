@@ -50,17 +50,32 @@ h2, strong {
   margin: 0 auto;
 }
 
-.concept {
+.ball-section {
   position: relative;
-  left: 460px;
-  top: -455px;
+  z-index: -1;
 
   ul {
     list-style: none;
     float: left;
   }
 
-  .little-ball { opacity: 0; }
+  .little-ball {
+    opacity: 0;
+    margin-bottom: 25px;
+  }
+
+  .dots-net {
+    display: block;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+.concept {
+  @extend .ball-section;
+
+  left: 460px;
+  top: -455px;
 
   .first-column {
     margin-top: 75px;
@@ -80,17 +95,12 @@ h2, strong {
     .last-ball .peity { @include transform(rotate(-35deg)); }
   }
 
-  .little-ball { margin-bottom: 25px; }
-
   .dots-net {
-    display: block;
     width: 300px;
     height: 400px;
 
-    position: relative;
     top: -38px;
     left: -280px;
-    z-index: -1;
   }
 }
 

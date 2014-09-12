@@ -8,3 +8,6 @@ Animations.Support.shuffle = (a) ->
     [a[i], a[j]] = [a[j], a[i]]
   # Return the shuffled array.
   a
+
+Animations.Support.capitalize = (word) ->
+  word[0].toUpperCase() + word[1..-1].toLowerCase()

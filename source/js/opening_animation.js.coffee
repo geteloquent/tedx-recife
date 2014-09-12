@@ -33,7 +33,8 @@ class window.OpeningAnimation
         stroke: '#ff2b06'
       }).data({
         title: 'TEDxRecife 2014',
-        step: 'concept-section'
+        step: 'concept-section',
+        animation: 'concept'
       })
     contactRect = @snap.rect(@center.x, @center.y + @side, @side, @side)
       .attr({
@@ -56,6 +57,10 @@ class window.OpeningAnimation
     })
     discs.transform('r45')
 
+    this._bindHoverEvent(discs)
+    this._bindClickEvent(discs)
+
+  _bindHoverEvent: (discs) ->
     menuSelector = @menuSelector
     $.each discs.selectAll('rect'), ->
       this.hover ->
@@ -85,12 +90,21 @@ class window.OpeningAnimation
           $.each unclickedItems, ->
             this.attr({ opacity: 0.5 })
 
-    tedxRect.click (event) ->
-      event.stopPropagation()
+  _bindClickEvent: (discs) ->
+    $.each discs.selectAll('rect'), ->
+      this.click (event) ->
+        event.stopPropagation()
 
-      impress().goto(this.data('step'), 2000)
-      this.data(clicked: true)
-      new Animations.ConceptAnimation('.concept').animate()
+        impress().goto(this.data('step'), 2000)
+        animationName = this.data('animation')
+        animationClass =
+          Animations["#{Animations.Support.capitalize(animationName)}Animation"]
+        new animationClass(".#{animationName}").animate()
+
+        menuItems = this.parent().selectAll('rect')
+        item.data(clicked: false) for item in menuItems
+        this.data(clicked: true)
+
 
   _starAnimation: ->
     TweenMax.to(
