@@ -137,3 +137,51 @@ h2, strong {
     }
   }
 }
+
+.executor {
+  @extend .ball-section;
+
+  top: -800px;
+  left: -130px;
+  height: 300px;
+  width: 500px;
+
+  .single-column {
+    margin-top: 182px;
+
+    &.middle {
+      .peity { @include transform(rotate(89deg)); }
+    }
+
+    &.last {
+      .peity { @include transform(rotate(90deg)); }
+    }
+  }
+
+  .first-column {
+    .middle-ball .peity { @include transform(rotate(180deg)); }
+  }
+
+  .middle-column {
+    .first-ball .peity { @include transform(rotate(-55deg)); }
+    .last-ball .peity { @include transform(rotate(54deg)); }
+  }
+
+  .dots-net {
+    width: 450px;
+    height: 250px;
+    right: -105px;
+    top: -280px;
+  }
+}
+
+.executor-body {
+  width: 700px;
+
+  .flag {
+    @include replace-text-with-dimensions('flag.png', 61, 55);
+    float: left;
+    margin-left: -61px;
+    margin-top: -40px;
+  }
+}

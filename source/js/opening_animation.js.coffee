@@ -26,6 +26,8 @@ class window.OpeningAnimation
         stroke: '#f9e5e4'
       }).data({
         title: 'Realização',
+        step: 'executor-section',
+        animation: 'executor'
       })
     tedxRect = @snap.rect(@center.x + @side, @center.y, @side, @side)
       .attr({
