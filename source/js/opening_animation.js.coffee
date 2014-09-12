@@ -90,7 +90,7 @@ class window.OpeningAnimation
 
       impress().goto(this.data('step'), 2000)
       this.data(clicked: true)
-      new ConceptAnimation('.concept').animate()
+      new Animations.ConceptAnimation('.concept').animate()
 
   _starAnimation: ->
     TweenMax.to(
