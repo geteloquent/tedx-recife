@@ -43,7 +43,9 @@ class window.OpeningAnimation
         fill: '#f95e4e',
         stroke: '#f95e4e',
       }).data({
-        title: 'Fale Conosco'
+        title: 'Fale Conosco',
+        step: 'contact-section',
+        animation: 'contact'
       })
     subscribeRect = @snap.rect(@center.x + @side, @center.y + @side, @side, @side)
       .attr({

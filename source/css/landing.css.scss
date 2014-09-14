@@ -14,6 +14,43 @@ h2, strong {
   color: #FF2B06;
 }
 
+form {
+  label {
+    font-style: italic;
+    display: block;
+  }
+
+  input[type=text] {
+    background-color: #F9E5E4;
+    border: none;
+    padding: 5px 0 5px 5px;
+    width: 99%;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+    color: #FF2B06;
+  }
+
+  textarea {
+    @extend input[type=text];
+  }
+
+  .buttons {
+    float: right;
+    margin-top: 10px;
+
+    input[type=submit] {
+      border: solid 1px #FF2B06;
+      background-color: white;
+      color: #FF2B06;
+    }
+  }
+}
+
+.contact-form {
+  width: 600px;
+}
+
 .main {
   width: 800px;
   margin: 0 auto;
@@ -182,6 +219,41 @@ h2, strong {
     @include replace-text-with-dimensions('flag.png', 61, 55);
     float: left;
     margin-left: -61px;
+    margin-top: -40px;
+  }
+}
+
+.contact {
+  @extend .ball-section;
+
+  top: -775px;
+  left: -70px;
+  height: 300px;
+  width: 500px;
+
+  .first-column {
+    .first-ball .peity { @include transform(rotate(-90deg)); }
+  }
+
+  .middle-column {
+    .first-ball .peity { @include transform(rotate(-90deg)); }
+  }
+
+  .dots-net {
+    width: 450px;
+    height: 250px;
+    right: -25px;
+    top: -320px;
+  }
+}
+
+.contact-body {
+  width: 700px;
+
+  .ballon {
+    @include replace-text-with-dimensions('ballon.png', 51, 55);
+    float: left;
+    margin-left: -51px;
     margin-top: -40px;
   }
 }
