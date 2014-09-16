@@ -4,3 +4,4 @@
 //= require animations/concept_animation
 //= require animations/executor_animation
 //= require animations/contact_animation
+//= require animations/subscription_animation

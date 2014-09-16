@@ -53,6 +53,8 @@ class window.OpeningAnimation
         stroke: '#9e2515',
       }).data({
         title: 'Inscrições'
+        step: 'subscription-section',
+        animation: 'subscription'
       })
 
     discs = @snap.group(tedxRect, subscribeRect, contactRect, executorsRect)
