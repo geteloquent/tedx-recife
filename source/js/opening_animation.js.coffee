@@ -29,7 +29,7 @@ class window.OpeningAnimation
         step: 'executor-section',
         animation: 'executor'
       })
-    tedxRect = @snap.rect(@center.x + @side, @center.y, @side, @side)
+    tedxRect = @snap.rect(@center.x + @side + 1, @center.y, @side, @side)
       .attr({
         fill: '#ff2b06',
         stroke: '#ff2b06'
@@ -38,7 +38,7 @@ class window.OpeningAnimation
         step: 'concept-section',
         animation: 'concept'
       })
-    contactRect = @snap.rect(@center.x, @center.y + @side, @side, @side)
+    contactRect = @snap.rect(@center.x, @center.y + @side + 1, @side, @side)
       .attr({
         fill: '#f95e4e',
         stroke: '#f95e4e',
@@ -47,7 +47,7 @@ class window.OpeningAnimation
         step: 'contact-section',
         animation: 'contact'
       })
-    subscribeRect = @snap.rect(@center.x + @side, @center.y + @side, @side, @side)
+    subscribeRect = @snap.rect(@center.x + @side + 1, @center.y + @side + 1, @side, @side)
       .attr({
         fill: '#9e2515',
         stroke: '#9e2515',
@@ -116,17 +116,13 @@ class window.OpeningAnimation
     TweenMax.fromTo(
       "#{@menuSelector} .main-ball", 3,
       { marginTop: '1000px' },
-      { scale: 3, marginTop: '1300px' }
+      { marginTop: '1300px' }
     ).delay(3)
 
     TweenMax.fromTo(
       ".banner", 3,
-      { opacity: 1, marginTop: '-1200px' },
-      {
-        opacity: 0, marginTop: '-1600px', scale: 0.3,
-        onComplete: ->
-         this.target.remove()
-      }
+      { opacity: 1, marginTop: '-1300px' },
+      { opacity: 0, marginTop: '-1500px', scale: 0.3 }
     ).delay(3)
 
     TweenMax.to(

@@ -10,7 +10,7 @@ class Animations.ContactAnimation extends Animations.Animation
     )
 
   _animateNet: ->
-    line1Drawing = new Drawing(@snap, this._dottedLine(400, 10, 310, 80), '', 800)
+    line1Drawing = new Drawing(@snap, this._dottedLine(397, 10, 310, 82), '', 800)
     line2Drawing = new Drawing(@snap, this._dottedLine(312, 80, 220, 80), '', 800)
     line3Drawing = new Drawing(@snap, this._dottedLine(220, 80, 20, 80), '', 800)
     line4Drawing = new Drawing(@snap, this._dottedLine(220, 80, 220, 240), '', 800)

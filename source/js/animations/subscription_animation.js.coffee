@@ -15,7 +15,7 @@ class Animations.SubscriptionAnimation extends Animations.Animation
     )
 
   _animateNet: ->
-    line1Drawing = new Drawing(@snap, this._dottedLine(0, 0, 96, 88), '', 800)
+    line1Drawing = new Drawing(@snap, this._dottedLine(20, 20, 96, 88), '', 800)
     line2Drawing = new Drawing(@snap, this._dottedLine(96, 86, 250, 86), '', 800)
     line3Drawing = new Drawing(@snap, this._dottedLine(96, 86, 96, 170), '', 800)
     line4Drawing = new Drawing(@snap, this._dottedLine(96, 170, 185, 252), '', 800)
