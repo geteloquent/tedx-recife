@@ -113,16 +113,17 @@ class window.OpeningAnimation
 
 
   _starAnimation: ->
-    TweenMax.to(
+    TweenMax.fromTo(
       "#{@menuSelector} .main-ball", 3,
-      { scale: 3, marginTop: '350px' }
+      { marginTop: '1000px' },
+      { scale: 3, marginTop: '1300px' }
     ).delay(3)
 
     TweenMax.fromTo(
       ".banner", 3,
-      { opacity: 1, marginTop: '-300px' },
+      { opacity: 1, marginTop: '-1200px' },
       {
-        opacity: 0, marginTop: '-700px', scale: 0.3,
+        opacity: 0, marginTop: '-1600px', scale: 0.3,
         onComplete: ->
          this.target.remove()
       }
