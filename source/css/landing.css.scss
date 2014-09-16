@@ -8,6 +8,72 @@
 
 body {
   font-family: "Glober";
+
+  &.dark-body {
+    background-color: black;
+    color: white;
+    padding-bottom: 80px;
+
+    .main {
+      width: 700px;
+      margin: 0 auto;
+      padding-top: 80px;
+    }
+
+    .global-nav {
+      .global-nav-item {
+        background-color: white;
+
+        &:before {
+          border-top-color: black;
+        }
+
+        &:after {
+          border-bottom-color: black;
+        }
+      }
+    }
+  }
+}
+
+.symbol {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 100px;
+  height: 100px;
+
+  a {
+    display: block;
+    @include replace-text-with-dimensions('symbol.png', 100, 100);
+  }
+}
+
+.about-ted {
+  .big-ted-logo {
+    display: inline-block;
+    @include replace-text-with-dimensions('big-ted-logo.png', 84, 31);
+  }
+
+  .video {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+.about-tedx {
+  .big-tedx-logo {
+    display: inline-block;
+    @include replace-text-with-dimensions('big-tedx-logo.png', 70, 21);
+  }
+
+  .video {
+    background-color: white;
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+  }
 }
 
 .global-nav {
