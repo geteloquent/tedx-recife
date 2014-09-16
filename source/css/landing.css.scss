@@ -35,6 +35,12 @@ body {
             background-position-y: -1px;
           }
         }
+
+        &.tedx-recife-logo {
+          a {
+            background-position-y: -1px;
+          }
+        }
       }
     }
   }
@@ -80,8 +86,15 @@ body {
   }
 }
 
+.about-tedx-recife {
+  .tedx-recife-2013-logo {
+    display: inline-block;
+    @include replace-text-with-dimensions('big-tedx-recife-logo.png', 163, 17);
+  }
+}
+
 .global-nav {
-  $width: 178px;
+  $width: 315px;
 
   position: fixed;
   z-index: 10;
@@ -109,6 +122,15 @@ body {
         a {
           display: block;
           @include replace-text-with-dimensions('tedx-logo-nav.png', 79, 46);
+        }
+      }
+
+      &.tedx-recife-logo {
+        margin-left: -30px;
+
+        a {
+          display: block;
+          @include replace-text-with-dimensions('tedx-recife-logo-nav.png', 153, 46);
         }
       }
     }
