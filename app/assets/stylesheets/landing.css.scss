@@ -189,9 +189,9 @@ form {
 .subscription-form {
   width: 690px;
   padding: 0 15px !important;
+  font-size: 15px;
 
-
-  $triangleDimension: 50px;
+  $triangleDimension: 20px;
   &:before {
     border-top: $triangleDimension solid white;
     border-right: $triangleDimension solid transparent;
@@ -204,6 +204,7 @@ form {
     height: 0;
   }
 
+  $triangleDimension: 25px;
   &:after {
     border-bottom: $triangleDimension solid white;
     border-left: $triangleDimension solid transparent;
@@ -213,7 +214,7 @@ form {
     width: 0;
     height: 0;
     top: 0;
-    left: 655px;
+    left: 680px;
   }
 
   .personal-infos {
@@ -233,20 +234,15 @@ form {
   }
 
   .buttons {
-    position: relative;
-    top: -42px;
-    right: 10px;
+    margin-right: 7px;
+    margin-bottom: -15px;
+    margin-top: 5px;
 
     input[type=submit] {
       background-color: #9E2515;
       border: 1px solid #9E2515;
       color: white;
       font-style: italic;
-
-      position: relative;
-      top: 40px;
-      float: right;
-      right: 50px;
     }
   }
 }
@@ -497,6 +493,7 @@ form {
     margin-bottom: 0;
     height: 50px;
     margin-left: 275px;
+    margin-top: 0;
 
     .raw {
       padding-top: 26px;
@@ -511,4 +508,15 @@ form {
   }
 
   p { font-size: 15px; }
+
+  .success-message {
+    width: 600px;
+    height: 290px;
+
+    .message {
+      display: block;
+      text-align: center;
+      margin-top: 60px;
+    }
+  }
 }

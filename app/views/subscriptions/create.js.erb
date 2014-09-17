@@ -1,0 +1,7 @@
+<% if @subscription.errors.empty? %>
+  message = "<%= j render 'shared/success_message', message: flash[:success] %>";
+  $('.subscription-form').replaceWith(message);
+<% else %>
+  form = "<%= j render 'form', subscription: @subscription %>";
+  $('.subscription-form').replaceWith(form);
+<% end %>

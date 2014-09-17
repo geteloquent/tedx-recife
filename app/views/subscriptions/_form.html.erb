@@ -1,0 +1,38 @@
+<%= form_for subscription, remote: true, html: { class: 'subscription-form dark-form clearfix' } do |f| %>
+  <% unless f.object.errors.empty? %>
+    <ul>
+      <% f.object.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <fieldset class="personal-infos">
+    <%= f.label :name, "Nome" %>
+    <%= f.text_field :name, required: true, class: 'input' %>
+
+    <%= f.label :email, "Email" %>
+    <%= f.email_field :email, required: true, class: 'input' %>
+
+    <%= f.label :cpf, "CPF" %>
+    <%= f.text_field :cpf, required: true, class: 'input cpf-input' %>
+
+    <%= f.label :birthday, "Nascimento" %>
+    <%= f.text_field :birthday, required: true, class: 'input birthday-input' %>
+
+    <%= f.label :corporation, "Empresa/Universidade" %>
+    <%= f.text_field :corporation, required: true, class: 'input' %>
+  </fieldset>
+
+  <fieldset class="additional-infos">
+    <%= f.label :message, "Explique por que devemos selecioná-lo para participar do TEDxRecife:" %>
+    <%= f.text_area :message, rows: 6, required: true, class: 'input message-input' %>
+
+    <%= f.label :social_networks, "Cite endereços de redes sociais e sites que nos ajude a conhecê-lo melhor:" %>
+    <%= f.text_field :social_networks, required: true, class: 'input' %>
+  </fieldset>
+
+  <fieldset class="buttons">
+    <%= f.submit "Enviar" %>
+  </fieldset>
+<% end %>
