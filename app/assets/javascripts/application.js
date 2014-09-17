@@ -18,6 +18,7 @@
 //= require opening_animation.js
 //= require animations.js
 //= require forms
+//= require impress-customization
 //= require_tree .
 
 $.fn.peity.defaults.pie = {
@@ -27,6 +28,8 @@ $.fn.peity.defaults.pie = {
   height: null,
   width: null
 }
-$(".pie").peity("pie")
 
-new OpeningAnimation('.menu').animate()
+$(document).ready(function(){
+  $(".pie").peity("pie")
+  new OpeningAnimation('.menu').animate()
+})
