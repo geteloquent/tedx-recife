@@ -1,0 +1,22 @@
+<%= form_for contact, remote: true, html: { class: 'contact-form clearfix' } do |f| %>
+  <ul>
+    <% f.object.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+
+  <fieldset>
+    <%= f.label :name, "Nome" %>
+    <%= f.text_field :name, required: true, class: 'input' %>
+
+    <%= f.label :email, "Email" %>
+    <%= f.email_field :email, required: true,class: 'input' %>
+
+    <%= f.label :message, "Mensagem" %>
+    <%= f.text_area :message, rows: 5, required: true, class: 'input' %>
+  </fieldset>
+
+  <fieldset class="buttons">
+    <%= f.submit "Enviar" %>
+  </fieldset>
+<% end %>

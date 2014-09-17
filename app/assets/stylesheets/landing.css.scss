@@ -146,7 +146,7 @@ form {
     display: block;
   }
 
-  input[type=text] {
+  .input {
     background-color: #F9E5E4;
     border: none;
     padding: 5px 0 5px 5px;
@@ -460,6 +460,17 @@ form {
     float: left;
     margin-left: -51px;
     margin-top: -40px;
+  }
+
+  .success-message {
+    width: 600px;
+    height: 290px;
+
+    .message {
+      display: block;
+      text-align: center;
+      margin-top: 60px;
+    }
   }
 }
 

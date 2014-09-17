@@ -1,0 +1,2 @@
+jQuery ->
+  $.get('/contacts/new')

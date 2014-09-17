@@ -17,6 +17,7 @@
 //= require impress.js
 //= require opening_animation.js
 //= require animations.js
+//= require contact_form
 //= require_tree .
 
 $.fn.peity.defaults.pie = {

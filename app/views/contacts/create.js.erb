@@ -1,0 +1,7 @@
+<% if @contact.errors.empty? %>
+  message = "<%= j render 'shared/success_message', message: flash[:success] %>";
+  $('.contact-form').replaceWith(message);
+<% else %>
+  form = "<%= j render 'form', contact: @contact %>";
+  $('.contact-form').replaceWith(form);
+<% end %>

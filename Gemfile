@@ -42,3 +42,4 @@ gem 'spring',        group: :development
 gem 'modernizr-rails'
 gem 'high_voltage', '~> 2.2.1'
 gem 'compass-rails'
+gem 'mail_form'
