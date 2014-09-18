@@ -158,7 +158,7 @@ form {
   }
 
   textarea {
-    @extend input[type=text];
+    @extend .input;
   }
 
   .buttons {
@@ -319,18 +319,26 @@ form {
     margin-top: 75px;
 
     .first-ball .peity { @include transform(rotate(50deg)); }
-    .last-ball .peity { @include transform(rotate(215deg)); }
+    .last-ball {
+      margin-top: 33px;
+      .peity { @include transform(rotate(230deg)); }
+    }
   }
 
   .middle-column {
+    margin-top: 6px;
+
+    .first-ball {
+      margin-top: 5px;
+      margin-bottom: 20px;
+      .peity { @include transform(rotate(-36deg)); }
+    }
     .third-ball .peity { @include transform(rotate(-135deg)); }
     .last-ball { margin-top: 50px; }
   }
 
   .last-column {
-    margin-top: 242px;
-
-    .last-ball .peity { @include transform(rotate(-35deg)); }
+    margin-top: 251px;
   }
 
   .dots-net {

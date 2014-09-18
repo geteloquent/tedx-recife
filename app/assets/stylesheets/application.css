@@ -13,5 +13,6 @@
  *= require normalize
  *= require main
  *= require landing
+ *= require bounce
  *= require_self
  */

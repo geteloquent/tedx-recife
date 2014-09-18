@@ -6,7 +6,7 @@ gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 
 gem 'modernizr-rails'
 gem 'high_voltage', '~> 2.2.1'
-gem 'compass-rails'
+gem 'compass-rails', git: 'git@github.com:Compass/compass-rails.git'
 gem 'mail_form'
 gem 'valid_email'
 gem 'validates_cpf_cnpj'
