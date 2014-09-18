@@ -492,6 +492,16 @@ form {
   height: 300px;
   width: 500px;
 
+  .first-column {
+    .first-ball .peity { @include  transform(rotate(90deg)); }
+    .middle-ball .peity { @include  transform(rotate(131deg)); }
+  }
+
+  .second-column {
+    .first-ball .peity { @include  transform(rotate(90deg)); }
+    .last-ball .peity { @include  transform(rotate(45deg)); }
+  }
+
   .dots-net {
     width: 450px;
     height: 250px;
