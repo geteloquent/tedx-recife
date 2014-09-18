@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require TweenMax.min.js
 //= require impress.js
 //= require opening_animation.js
@@ -28,8 +27,3 @@ $.fn.peity.defaults.pie = {
   height: null,
   width: null
 }
-
-$(document).ready(function(){
-  $(".pie").peity("pie")
-  new OpeningAnimation('.menu').animate()
-})

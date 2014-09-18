@@ -1,3 +1,14 @@
+<%= content_for :additional_js do %>
+  <script>
+    impress().init();
+
+    $(document).ready(function(){
+      $(".pie").peity("pie")
+      new OpeningAnimation('.menu').animate()
+    })
+  </script>
+<% end %>
+
 <div id="impress">
   <section  id="main-section" class="step main clearfix" data-x="0" data-y="0">
     <div class="menu">

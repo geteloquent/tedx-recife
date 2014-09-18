@@ -10,7 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag :modernizr %>
   <%= csrf_meta_tags %>
 </head>
@@ -19,8 +19,10 @@
   <%= render 'shared/global_nav' %>
   <%= yield %>
 
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <script>impress().init();</script>
+  <%= javascript_include_tag 'application' %>
+  <% if content_for :additional_js %>
+    <%= yield(:additional_js) %>
+  <% end %>
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
