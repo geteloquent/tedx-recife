@@ -75,28 +75,25 @@ class window.OpeningAnimation
     $.each discs.selectAll('rect'), ->
       this.hover ->
         $("#{menuSelector} .menu-hint").css('opacity', 0)
+        this.attr({ opacity: 1 })
 
         hoveredItem = this
         $.each this.parent().selectAll('rect'), ->
-          if this == hoveredItem
-            this.attr({ opacity: 1 })
-          else if !this.data('clicked')
+          if this != hoveredItem && !$(this.node).data('clicked')
             this.animate({ opacity: 0.5 }, 300)
 
         title = this.data('title')
         $("#{menuSelector} .menu-title").html(title).css(color: '#FF2B06')
       , ->
+        $("#{menuSelector} .menu-title").css(color: 'transparent')
+
         menuItems = this.parent().selectAll('rect')
         clickedItems = (item for item in menuItems when $(item.node).data('clicked') == true)
         if clickedItems.length == 0
-          $("#{menuSelector} .menu-title").css(color: 'transparent')
           $.each this.parent().selectAll('rect'), ->
             this.animate({ opacity: 1 }, 300)
         else
-          item = clickedItems[0]
-          title = item.data('title')
-          $("#{menuSelector} .menu-title").html(title).css(color: '#FF2B06')
-          unclickedItems = (item for item in menuItems when !item.data('clicked'))
+          unclickedItems = (item for item in menuItems when !$(item.node).data('clicked'))
           $.each unclickedItems, ->
             this.attr({ opacity: 0.5 })
 
@@ -114,9 +111,7 @@ class window.OpeningAnimation
       menuItems = $(this).parent().find('rect')
       $(item).data(clicked: false) for item in menuItems
       $(this).data(clicked: true)
-      snapItem = Snap.select("##{$(this).prop('id')}")
-      title = snapItem.data('title')
-      $("#{menuSelector} .menu-title").html(title).css(color: '#FF2B06')
+      $("#{menuSelector} .menu-title").css(color: 'transparent')
 
 
   _starAnimation: ->

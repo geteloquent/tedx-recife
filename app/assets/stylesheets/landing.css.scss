@@ -522,13 +522,14 @@ form {
     .raw {
       padding-top: 26px;
       display: block;
+      float: right;
     }
   }
 
   .hand {
     @include replace-text-with-dimensions('hand.png', 51, 55);
     float: left;
-    margin-right: 5px;
+    margin-left: 290px;
   }
 
   p { font-size: 15px; }
