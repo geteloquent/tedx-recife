@@ -442,6 +442,10 @@ form {
   height: 300px;
   width: 500px;
 
+  .single-column {
+    .last-ball .peity { @include transform(rotate(90deg));}
+  }
+
   .first-column {
     .first-ball .peity { @include transform(rotate(-90deg)); }
   }
