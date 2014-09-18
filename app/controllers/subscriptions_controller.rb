@@ -5,7 +5,6 @@ class SubscriptionsController < ApplicationController
 
   def create
     @subscription = Subscription.new(subscription_params)
-    debugger
 
     if @subscription.save
       flash[:success] = 'Obrigado pelo interesse, responderemos em breve. :)'
