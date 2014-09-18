@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use pg as the database for Active Record
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,3 +43,6 @@ gem 'compass-rails', git: 'git@github.com:Compass/compass-rails.git'
 gem 'mail_form'
 gem 'valid_email'
 gem 'validates_cpf_cnpj'
+gem 'rails_12factor', group: :production
+
+ruby "2.0.0"
