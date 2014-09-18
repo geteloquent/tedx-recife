@@ -39,7 +39,7 @@ gem 'spring',        group: :development
 
 gem 'modernizr-rails'
 gem 'high_voltage', '~> 2.2.1'
-gem 'compass-rails', git: 'git@github.com:Compass/compass-rails.git'
+gem 'compass-rails', github: 'Compass/compass-rails'
 gem 'mail_form'
 gem 'valid_email'
 gem 'validates_cpf_cnpj'
