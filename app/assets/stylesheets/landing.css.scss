@@ -389,8 +389,8 @@ form {
 .executor {
   @extend .ball-section;
 
-  top: -800px;
-  left: -130px;
+  top: -850px;
+  left: -110px;
   height: 300px;
   width: 500px;
 
@@ -407,17 +407,17 @@ form {
   }
 
   .first-column {
-    .middle-ball .peity { @include transform(rotate(180deg)); }
+    .middle-ball .peity { @include transform(rotate(179deg)); }
   }
 
   .middle-column {
-    .first-ball .peity { @include transform(rotate(-55deg)); }
+    .first-ball .peity { @include transform(rotate(-50deg)); }
     .last-ball .peity { @include transform(rotate(54deg)); }
   }
 
   .dots-net {
     width: 450px;
-    height: 250px;
+    height: 285px;
     right: -105px;
     top: -280px;
   }
