@@ -476,6 +476,95 @@ form {
     margin-left: -61px;
     margin-top: -40px;
   }
+
+  .organizers {
+    .organizers-list {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      .organizer-item {
+        width: 350px;
+        float: left;
+        margin-bottom: 15px;
+        font-size: .9em;
+
+        .avatar {
+          width: 50px;
+          height: 50px;
+          float: left;
+          margin-right: 10px;
+          background-color: red;
+        }
+
+        .bio {
+          margin: 0;
+          width: 280px;
+          float: left;
+        }
+      }
+    }
+  }
+
+  .supporters {
+    margin-top: 5px;
+
+    .supporter-row { margin-bottom: 15px; }
+
+    .title {
+      color: #FF2B06;
+      width: 85px;
+      border-right: 2px solid #CCCCCC;
+      text-align: right;
+      float: left;
+      padding: 15px;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .supporters-list {
+      width: 380px;
+      float: left;
+      list-style: none;
+      margin: 0;
+      margin-top: 6px;
+
+      &.chegados { margin-top: 10px; }
+
+      .logo {
+        display: block;
+        float: left;
+        margin-right: 20px;
+      }
+
+      .hub-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('hub-logo.png', 87, 41);
+      }
+
+      .albie-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('albie-logo.png', 83, 31);
+        margin-top: 5px;
+      }
+
+      .eloquent-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('eloquent-logo.png', 69, 31);
+        margin-top: 13px;
+      }
+
+      .aba-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('aba-logo.png', 81, 31);
+      }
+
+      .vincular-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('vincular-logo.png', 29, 31);
+      }
+    }
+  }
 }
 
 .contact {
