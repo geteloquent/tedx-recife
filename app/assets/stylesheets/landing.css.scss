@@ -4,6 +4,7 @@
 
 @import "compass/css3/transform";
 @import "compass/typography/text/replacement";
+@import "compass/css3/images";
 
 body {
   font-family: "Glober";
@@ -64,9 +65,9 @@ body {
   }
 
   .video {
-    background-color: white;
     width: 600px;
     height: 300px;
+    display: block;
     margin: 0 auto;
   }
 }
@@ -78,10 +79,10 @@ body {
   }
 
   .video {
-    background-color: white;
     width: 600px;
     height: 300px;
     margin: 0 auto;
+    display: block;
   }
 }
 
@@ -89,6 +90,49 @@ body {
   .tedx-recife-2013-logo {
     display: inline-block;
     @include replace-text-with-dimensions('big-tedx-recife-logo.png', 163, 17);
+  }
+
+  .video-list {
+    .video-list-item {
+      cursor: pointer;
+      background: image-url('video-bakground.jpg');
+      float: left;
+      border: solid 1px black;
+      margin: 2px;
+      overflow: hidden;
+
+      .overlay.open {
+        height: 100%;
+        width: 100%;
+
+        .cssgradients & {
+          @include background-image(linear-gradient(top, rgba(0,0,0,0) 20%, #000000));
+        }
+      }
+      .header { margin: 10px; }
+      .talk {
+        margin: 0;
+        color: #FF2B06;
+      }
+      .speaker {
+        margin: 0;
+        font-weight: normal;
+      }
+      .description {
+        display: none;
+        margin: 10px;
+      }
+
+      &.belize-camara { background-image: image-url('speakers/belize-camara.jpg') }
+      &.guilherme-jordao { background-image: image-url('speakers/guilherme-jordao.jpg') }
+      &.rafa-mattos { background-image: image-url('speakers/rafa-mattos.jpg') }
+      &.pedro-melo { background-image: image-url('speakers/pedro-melo.jpg') }
+      &.gustavo-maia { background-image: image-url('speakers/gustavo-maia.jpg') }
+      &.flavia-moura { background-image: image-url('speakers/flavia-moura.jpg') }
+      &.andrea-souza { background-image: image-url('speakers/andrea-souza.jpg') }
+      &.renato-kyiama { background-image: image-url('speakers/renato-kyiama.jpg') }
+      &.leonardo-cisneiros { background-image: image-url('speakers/leonardo-cisneiros.jpg') }
+    }
   }
 }
 
