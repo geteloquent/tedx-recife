@@ -19,6 +19,8 @@
 //= require forms
 //= require impress-customization
 //= require jquery.tooltipster.min.js
+//= require spin
+//= require jquery.spin
 //= require_tree .
 
 $(document).ready(function(){
@@ -43,5 +45,11 @@ $(document).ready(function(){
     functionAfter: function(){
       $(this).parent().attr('aria-hidden', true);
     }
+  });
+
+  $('body').on('ajax:beforeSend', 'form', function(){
+    $(this).find('.btn-submit').
+      spin({ width: 3, length: 2, radius: 5, lines: 10 }).
+      css('color', 'transparent')
   });
 })

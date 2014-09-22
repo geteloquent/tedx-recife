@@ -4,4 +4,6 @@
 <% else %>
   form = "<%= j render 'form', subscription: @subscription %>";
   $('.subscription-form').replaceWith(form);
+  $('.subscription-form .cpf-input').mask("999.999.999-99")
+  $('.subscription-form .birthday-input').mask("99/99/9999")
 <% end %>

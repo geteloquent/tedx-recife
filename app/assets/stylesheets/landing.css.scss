@@ -243,7 +243,8 @@ form {
     float: right;
     margin-top: 10px;
 
-    input[type=submit] {
+    .btn-submit {
+      position: relative;
       font-family: "Glober";
       border: solid 1px #FF2B06;
       background-color: white;

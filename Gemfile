@@ -45,5 +45,6 @@ gem 'valid_email'
 gem 'validates_cpf_cnpj'
 gem 'rails_12factor', group: :production
 gem 'tooltipster-rails'
+gem 'spinjs-rails'
 
 ruby "2.0.0"
