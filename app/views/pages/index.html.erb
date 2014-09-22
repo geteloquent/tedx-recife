@@ -5,6 +5,16 @@
     $(document).ready(function(){
       $(".pie").peity("pie")
       new OpeningAnimation('.menu').animate()
+
+      $(document).on('impress:stepenter', function(event){
+        $backButton = $('.back-button')
+
+        if ($(event.target).prop('id') == $('#main-section').prop('id')) {
+          $backButton.fadeOut()
+        } else {
+          $backButton.fadeIn()
+        }
+      });
     })
   </script>
 <% end %>
@@ -27,3 +37,4 @@
   <%= render 'pages/contact/body' %>
   <%= render 'pages/subscription/body' %>
 </div>
+<%= link_to "Voltar", '#main-section', class: 'back-button' %>

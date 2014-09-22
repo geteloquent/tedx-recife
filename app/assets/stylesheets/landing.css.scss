@@ -183,6 +183,35 @@ body {
   }
 }
 
+.back-button {
+  display: none;
+
+  $width: 70px;
+
+  position: fixed;
+  z-index: 10;
+  margin-left: -$width/2;
+  left: 50%;
+  width: $width;
+  text-align: center;
+  bottom: 10px;
+
+  text-decoration: none;
+  color: #f95e4e;
+
+  &:hover { color: #9e2515; }
+
+  &:before {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: image-url('mini-ballon.png');
+    content: '';
+    float: left;
+    margin-top: -4px;
+  }
+}
+
 h2, strong {
   color: #FF2B06;
 }
@@ -407,11 +436,11 @@ form {
     margin-top: -10px;
     height: 45px;
 
-    $height: 56px;
+    $height: 46px;
 
     .logo {
       display: block;
-      @include replace-text-with-dimensions('logo.png', 249, $height);
+      @include replace-text-with-dimensions('logo.png', 205, $height);
       float: left;
       margin-right: 10px;
     }
