@@ -11,7 +11,8 @@ body {
   font-family: "Glober";
 
   &.dark-body {
-    background-color: black;
+    background-image: image-url('dark-balls.png');
+    background-position: -300px 0;
     color: white;
     padding-bottom: 80px;
 
@@ -39,7 +40,7 @@ body {
 
         &.tedx-recife-logo {
           a {
-            background-position-y: -1px;
+            background-position-y: -3px;
           }
         }
       }
@@ -138,7 +139,7 @@ body {
 }
 
 .global-nav {
-  $width: 315px;
+  $width: 370px;
 
   position: fixed;
   z-index: 10;
@@ -174,7 +175,8 @@ body {
 
         a {
           display: block;
-          @include replace-text-with-dimensions('tedx-recife-logo-nav.png', 153, 46);
+          @include replace-text-with-dimensions('tedx-recife-logo-nav.png', 211, 48);
+          background-position-y: -2px;
         }
       }
     }
@@ -197,6 +199,7 @@ form {
     padding: 5px 0 5px 5px;
     width: 99%;
     margin-bottom: 5px;
+    height: 15px;
 
     font-weight: bold;
     color: #FF2B06;
@@ -204,6 +207,7 @@ form {
 
   textarea {
     @extend .input;
+    height: auto !important;
   }
 
   .buttons {
@@ -274,7 +278,7 @@ form {
     width: 320px;
 
     .message-input {
-      margin-bottom: 36px;
+      margin-bottom: 29px;
     }
   }
 
@@ -400,8 +404,8 @@ form {
   background: image-url('silent-revolutions.png') no-repeat right bottom;
 
   .title {
-    margin-bottom: 30px;
     margin-top: -10px;
+    height: 45px;
 
     $height: 56px;
 
@@ -426,9 +430,14 @@ form {
       float: left;
       margin-top: 15px;
     }
+
   }
 
   .last-call { margin-bottom: 0; }
+  p {
+    font-size: 15px;
+    margin: 10px 0;
+  }
 }
 
 .executor {
@@ -470,6 +479,8 @@ form {
 
 .executor-body {
   width: 700px;
+
+  .title { margin-bottom: 16px; }
 
   .flag {
     @include replace-text-with-dimensions('flag.png', 61, 55);

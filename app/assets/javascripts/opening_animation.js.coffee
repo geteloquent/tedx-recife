@@ -119,13 +119,13 @@ class window.OpeningAnimation
       "#{@menuSelector} .main-ball", 3,
       { marginTop: '1000px' },
       { marginTop: '1300px' }
-    ).delay(3)
+    ).delay(1)
 
     TweenMax.fromTo(
       ".banner", 3,
       { opacity: 1, marginTop: '-1300px' },
       { opacity: 0, marginTop: '-1500px', scale: 0.3 }
-    ).delay(3)
+    ).delay(1)
 
     TweenMax.to(
       "#{@menuSelector} .main-ball", 0.5, { scale: 1 }
