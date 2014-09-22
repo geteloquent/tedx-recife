@@ -5,6 +5,7 @@
 @import "compass/css3/transform";
 @import "compass/typography/text/replacement";
 @import "compass/css3/images";
+@import "compass/css3/border-radius";
 
 body {
   font-family: "Glober";
@@ -481,26 +482,33 @@ form {
     .organizers-list {
       list-style: none;
       padding: 0;
-      margin-bottom: 0;
+      margin: 0;
 
       .organizer-item {
-        width: 350px;
         float: left;
         margin-bottom: 15px;
         font-size: .9em;
 
         .avatar {
-          width: 50px;
-          height: 50px;
+          width: 60px;
+          height: 60px;
           float: left;
+          margin: 0;
           margin-right: 10px;
-          background-color: red;
+
+          .borderradius & { @include border-radius(30px); }
         }
 
-        .bio {
-          margin: 0;
-          width: 280px;
-          float: left;
+        .bio { display: none; }
+
+        .alfredo-junior {
+          @include replace-text('organizers/alfredo-junior.jpg');
+          background-position: -6px -1px;
+        }
+
+        .daniella-marcusso {
+          @include replace-text('organizers/daniella-marcusso.jpg');
+          background-position: -16px 0px;
         }
       }
     }
@@ -517,51 +525,57 @@ form {
       border-right: 2px solid #CCCCCC;
       text-align: right;
       float: left;
-      padding: 15px;
+      padding: 25px 15px;
       padding-left: 0;
       margin: 0;
     }
 
     .supporters-list {
-      width: 380px;
+      width: 450px;
       float: left;
       list-style: none;
       margin: 0;
       margin-top: 6px;
 
       &.chegados { margin-top: 10px; }
+      &.padrinhos { margin-top: 6px; }
 
       .logo {
         display: block;
         float: left;
-        margin-right: 20px;
+        margin-right: 30px;
       }
 
       .hub-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('hub-logo.png', 87, 41);
+        @include replace-text-with-dimensions('hub-logo.png', 131, 61);
       }
 
       .albie-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('albie-logo.png', 83, 31);
+        @include replace-text-with-dimensions('albie-logo.png', 125, 46);
         margin-top: 5px;
       }
 
       .eloquent-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('eloquent-logo.png', 69, 31);
+        @include replace-text-with-dimensions('eloquent-logo.png', 104, 46);
         margin-top: 13px;
+      }
+
+      .dezoito-minutos-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('18-minutos-logo.png', 69, 62);
       }
 
       .aba-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('aba-logo.png', 81, 31);
+        @include replace-text-with-dimensions('aba-logo.png', 124, 47);
       }
 
       .vincular-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('vincular-logo.png', 29, 31);
+        @include replace-text-with-dimensions('vincular-logo.png', 44, 46);
       }
     }
   }
@@ -677,4 +691,10 @@ form {
       margin-top: 60px;
     }
   }
+}
+
+.tooltipster-base {
+  width: 600px !important;
+
+  .bio-tooltip { line-height: 18px; }
 }

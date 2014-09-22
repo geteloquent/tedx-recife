@@ -18,12 +18,30 @@
 //= require animations.js
 //= require forms
 //= require impress-customization
+//= require jquery.tooltipster.min.js
 //= require_tree .
 
-$.fn.peity.defaults.pie = {
-  delimiter: null,
-  diameter: 50,
-  fill: ["#FF2B06", "#9E2515", "#F95E4E", "#F9E5E4"],
-  height: null,
-  width: null
-}
+$(document).ready(function(){
+  $.fn.peity.defaults.pie = {
+    delimiter: null,
+    diameter: 50,
+    fill: ["#FF2B06", "#9E2515", "#F95E4E", "#F9E5E4"],
+    height: null,
+    width: null
+  }
+
+  $('.organizer-item .avatar').tooltipster({
+    position: 'right',
+    theme: 'tooltipster-light',
+    contentAsHTML: true,
+    functionInit: function(){
+      return $(this).parent().find('.bio').html();
+    },
+    functionReady: function(){
+      $(this).parent().attr('aria-hidden', false);
+    },
+    functionAfter: function(){
+      $(this).parent().attr('aria-hidden', true);
+    }
+  });
+})
