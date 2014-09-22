@@ -448,7 +448,7 @@ form {
     .year {
       display: block;
       height: $height;
-      font-size: 1.2em;
+      font-size: 1em;
       font-weight: normal;
       float: left;
       margin: 0 5px;
@@ -457,16 +457,12 @@ form {
     .star {
       @include replace-text-with-dimensions('star.png', 16, 16);
       float: left;
-      margin-top: 15px;
+      margin-top: 9px;
     }
 
   }
 
   .last-call { margin-bottom: 0; }
-  p {
-    font-size: 15px;
-    margin: 10px 0;
-  }
 }
 
 .executor {
