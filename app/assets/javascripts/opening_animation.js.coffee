@@ -99,7 +99,7 @@ class window.OpeningAnimation
 
   _bindClickEvent: (discs) ->
     menuSelector = @menuSelector
-    $("#{@menuSelector} rect").on 'click', ->
+    $("#{@menuSelector} rect").on 'click', (event) ->
       event.stopPropagation()
 
       impress().goto($(this).data('step'), 2000)
@@ -128,13 +128,9 @@ class window.OpeningAnimation
     ).delay(1)
 
     TweenMax.to(
-      "#{@menuSelector} .main-ball", 0.5, { scale: 1 }
-    ).delay(6)
-
-    TweenMax.to(
       "#{@menuSelector} .menu-hint", 0.5, { opacity: 1 }
-    ).delay(7)
+    ).delay(4)
 
     TweenMax.to(
       "#{@menuSelector} .menu-hint", 0.5, { opacity: 0 }
-    ).delay(9)
+    ).delay(6)

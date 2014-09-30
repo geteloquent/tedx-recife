@@ -595,8 +595,8 @@ form {
 
       .albie-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('albie-logo.png', 125, 46);
-        margin-top: 5px;
+        @include replace-text-with-dimensions('albie-logo.png', 111, 41);
+        margin-top: 6px;
       }
 
       .eloquent-logo {
