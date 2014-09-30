@@ -547,6 +547,11 @@ form {
           @include replace-text('organizers/daniella-marcusso.jpg');
           background-position: -16px 0px;
         }
+
+        .gleyce-ramos {
+          @include replace-text('organizers/gleyce-ramos.jpg');
+          background-position: -5px -11px;
+        }
       }
     }
   }
