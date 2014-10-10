@@ -619,6 +619,11 @@ form {
         @extend .logo;
         @include replace-text-with-dimensions('vincular-logo.png', 44, 46);
       }
+
+      .tempest-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('tempest-logo.png', 124, 47);
+      }
     }
   }
 }
