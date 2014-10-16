@@ -590,44 +590,44 @@ form {
 
       .hub-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('hub-logo.png', 131, 61);
+        @include replace-text-with-dimensions('sponsors/hub-logo.png', 131, 61);
       }
 
       .albie-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('albie-logo.png', 111, 41);
+        @include replace-text-with-dimensions('sponsors/albie-logo.png', 111, 41);
         margin-top: 6px;
       }
 
       .eloquent-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('eloquent-logo.png', 104, 46);
+        @include replace-text-with-dimensions('sponsors/eloquent-logo.png', 104, 46);
         margin-top: 13px;
       }
 
       .cesar-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('cesar-logo.png', 92, 55);
+        @include replace-text-with-dimensions('sponsors/cesar-logo.png', 92, 55);
       }
 
       .dezoito-minutos-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('18-minutos-logo.png', 69, 62);
+        @include replace-text-with-dimensions('sponsors/18-minutos-logo.png', 69, 62);
       }
 
       .aba-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('aba-logo.png', 124, 47);
+        @include replace-text-with-dimensions('sponsors/aba-logo.png', 124, 47);
       }
 
       .vincular-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('vincular-logo.png', 44, 46);
+        @include replace-text-with-dimensions('sponsors/vincular-logo.png', 44, 46);
       }
 
       .tempest-logo {
         @extend .logo;
-        @include replace-text-with-dimensions('tempest-logo.png', 124, 47);
+        @include replace-text-with-dimensions('sponsors/tempest-logo.png', 124, 47);
       }
     }
   }
