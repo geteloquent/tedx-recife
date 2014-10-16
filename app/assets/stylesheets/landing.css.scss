@@ -643,6 +643,7 @@ form {
         text-align: center;
         margin-bottom: 10px;
 
+        margin-right: 10px;
         &:last-child .logo { margin-right: 0; }
       }
 
@@ -672,6 +673,12 @@ form {
       .cesar-logo {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/cesar-logo.png', 92, 55);
+      }
+
+      .vivo-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('vivo-logo.png', 128, 48);
+        margin-bottom: 7px;
       }
 
       .dezoito-minutos-logo {
