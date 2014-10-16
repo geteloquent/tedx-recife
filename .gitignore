@@ -16,3 +16,7 @@
 /tmp
 
 *.sw*
+.DS_Store
+test
+log
+app/assets/images/speakers/originals
