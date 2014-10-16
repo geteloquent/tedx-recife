@@ -33,7 +33,9 @@ $(document).ready(function(){
   }
 
   $('.organizer-item .avatar').tooltipster({
+    arrow: false,
     position: 'right',
+    offsetY: -80,
     theme: 'tooltipster-light',
     contentAsHTML: true,
     functionInit: function(){

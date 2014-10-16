@@ -605,6 +605,11 @@ form {
         margin-top: 13px;
       }
 
+      .cesar-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('cesar-logo.png', 92, 55);
+      }
+
       .dezoito-minutos-logo {
         @extend .logo;
         @include replace-text-with-dimensions('18-minutos-logo.png', 69, 62);
