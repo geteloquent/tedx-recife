@@ -79,13 +79,37 @@ body {
     @include replace-text-with-dimensions('big-tedx-recife-logo.png', 163, 17);
   }
 
+  .video-list-minified {
+    .video-list-minified-item {
+      float: none;
+      margin-bottom: 15px;
+    }
+
+    .video-link { text-decoration: none; }
+
+    .talk {
+      margin: 0;
+      color: #FF2B06;
+      font-size: 1.5em;
+
+      .fa {
+        color: white;
+        margin-left: 10px;
+      }
+    }
+    .speaker {
+      font-size: 1.2em;
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    .photo { margin: 0 auto; }
+  }
+
   .video-list {
     .video-list-item {
+      padding: 0;
       cursor: pointer;
-      background: image-url('video-bakground.jpg');
       float: left;
-      border: solid 1px black;
-      margin: 2px;
       overflow: hidden;
 
       .overlay.open {
