@@ -21,6 +21,7 @@
 //= require jquery.tooltipster.min.js
 //= require spin
 //= require jquery.spin
+//= require bootstrap/collapse
 //= require_tree .
 
 $(document).ready(function(){

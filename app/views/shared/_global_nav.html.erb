@@ -1,13 +1,42 @@
-<nav class="global-nav">
-  <ul class="global-nav-list clearfix">
-    <li class="global-nav-item ted-logo">
-      <%= link_to 'TED', page_path('about-ted') %>
-    </li>
-    <li class="global-nav-item tedx-logo">
-      <%= link_to 'TEDx', page_path('about-tedx') %>
-    </li>
-    <li class="global-nav-item tedx-recife-logo">
-      <%= link_to 'TEDx Recife', page_path('about-tedx-recife') %>
-    </li>
-  </ul>
-</nav>
+<% responsive = true %>
+
+<% if content_for :navbar_unresponsive %>
+  <% responsive = !(yield :navbar_unresponsive) %>
+<% end %>
+
+<% if responsive %>
+  <nav class="global-nav navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="hidden-xs">
+        <%= render 'shared/nav_menu' %>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav visible-xs-block">
+          <li>
+            <%= link_to 'TED', page_path('about-ted') %>
+          </li>
+          <li>
+            <%= link_to 'TEDx', page_path('about-tedx') %>
+          </li>
+          <li>
+            <%= link_to 'TEDx Recife 2013', page_path('about-tedx-recife') %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<% else %>
+  <nav class="global-nav" role="navigation">
+    <%= render 'shared/nav_menu' %>
+  </nav>
+<% end %>

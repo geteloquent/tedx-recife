@@ -17,8 +17,7 @@ body {
     padding-bottom: 80px;
 
     .main {
-      width: 700px;
-      margin: 0 auto;
+      max-width: 700px;
       padding-top: 80px;
     }
 
@@ -65,26 +64,12 @@ body {
     display: inline-block;
     @include replace-text-with-dimensions('big-ted-logo.png', 84, 31);
   }
-
-  .video {
-    width: 600px;
-    height: 300px;
-    display: block;
-    margin: 0 auto;
-  }
 }
 
 .about-tedx {
   .big-tedx-logo {
     display: inline-block;
     @include replace-text-with-dimensions('big-tedx-logo.png', 70, 21);
-  }
-
-  .video {
-    width: 600px;
-    height: 300px;
-    margin: 0 auto;
-    display: block;
   }
 }
 
@@ -139,13 +124,21 @@ body {
 }
 
 .global-nav {
-  $width: 370px;
+  $width: 440px;
 
-  position: fixed;
-  z-index: 10;
-  margin-left: -$width/2;
-  left: 50%;
-  width: $width;
+  @media (min-width: 768px) {
+    & {
+      position: fixed;
+      z-index: 10;
+      margin-left: -$width/2;
+      left: 50%;
+      width: $width;
+
+      background-color: transparent;
+      border: none;
+    }
+  }
+
   text-align: center;
 
   .global-nav-list {
@@ -155,6 +148,8 @@ body {
     .global-nav-item {
       float: left;
       padding: 0 5px;
+
+      a:hover { background-color: transparent; }
 
       &.ted-logo {
         a {
@@ -327,7 +322,7 @@ form {
 }
 
 .main {
-  width: 800px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
