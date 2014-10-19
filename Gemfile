@@ -46,5 +46,6 @@ gem 'validates_cpf_cnpj'
 gem 'rails_12factor', group: :production
 gem 'tooltipster-rails'
 gem 'bootstrap-sass', '~> 3.2.0'
+gem "browser"
 
 ruby "2.0.0"
