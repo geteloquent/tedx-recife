@@ -19,8 +19,6 @@
 //= require forms
 //= require impress-customization
 //= require jquery.tooltipster.min.js
-//= require spin
-//= require jquery.spin
 //= require bootstrap/collapse
 //= require_tree .
 
