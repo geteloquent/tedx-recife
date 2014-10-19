@@ -51,8 +51,7 @@ $(document).ready(function(){
   });
 
   $('body').on('ajax:beforeSend', 'form', function(){
-    $(this).find('.btn-submit').
-      spin({ width: 3, length: 2, radius: 5, lines: 10 }).
-      css('color', 'transparent')
+    $spinner = $('<i/>', { class: "fa fa-spinner fa-spin" })
+    $(this).find('.btn-submit').html($spinner)
   });
 })

@@ -1,4 +1,6 @@
-<section class="step executor-body" id="executor-section" data-x="-570" data-y="-350" style="display: none;">
+<% hide = false unless local_assigns.has_key? :hide %>
+
+<section class="step executor-body col-md-12" id="executor-section" data-x="-570" data-y="-350" style="<%= hide ? 'display: none;' : '' %>">
   <h2 class="title clearfix">
     <i class="flag"></i>
     <strong>Realização</strong>
@@ -9,15 +11,19 @@
   <p class="last-paragraph">O <strong>TEDxRecife</strong> é fruto de um trabalho colaborativo entre pessoas e organizações que acreditam num mundo melhor. A cada manifestação <strong>TEDxRecife</strong>, mais e mais parceiros aumentam a rede de colaboração. Ampliam a voz de um grupo louco de recifenses que inicialmente se uniram para espalhar ideias transformadoras.</p>
 
   <section class="organizers clearfix">
-    <ul class="organizers-list clearfix">
+    <ul class="organizers-list list-inline clearfix">
       <li class="organizer-item">
-        <h6 class="avatar daniella-marcusso tooltip">Daniella Marcusso</h6>
+        <%= link_to "http://www.linkedin.com/in/daniellamarcusso", target: :blank do %>
+          <h6 class="avatar daniella-marcusso">Daniella Marcusso</h6>
+        <% end %>
         <div class="bio">
           <p><strong>Daniella Marcusso de Vasconcellos</strong>, curadora e “coach” dos palestrantes do Ted-X Recife 2014, é uma “ expert” em expressão verbal, comunicação oral e escrita de alto impacto. Treina empreendedores, executivos e palestrantes para eventos em que a comunicação tem a possibilidade de mudar o rumo de sua vida e carreira.</p> <p>Formada em administração de empresas pela Fundação Getúlio Vargas (FGV/SP) e em direito pela USP (Universidade de São Paulo), mestrado (MBA) pela Columbia Business School em NY, Daniella fez cursos de especialização em oratória, retórica e negociações em instituições renomadas em Genebra,Londres e Nova York. <p>Trabalhou durante 14 anos como diretora de relacionamentos em instituições internacionais como Goldman Sachs e JP Morgan. Fundou a 18 Minutos Consultoria Especializada em Comunicação de Alto Impacto.</p> <p>Já realizou trabalhos voluntários como mentora e “coach de várias organizações internacionais tais como: TEDx, Startup Weekend,Technovation Challenge, Artemísia Lab, etc.</p>
-        </div>
-      </li>
-      <li class="organizer-item">
-        <h6 class="avatar alfredo-junior">Alfredo Júnior</h6>
+          </div>
+        </li>
+        <li class="organizer-item">
+          <%= link_to "http://br.linkedin.com/pub/alfredo-júnior/76/104/965/en", target: :blank do %>
+            <h6 class="avatar alfredo-junior">Alfredo Júnior</h6>
+          <% end %>
         <div class="bio">
           <div class="bio-tooltip">
             <p><strong>Alfredo Júnior</strong> é físico por formação e Empreendedor de coração. Possui mestrado em Engenharia Nuclear pela UFPE e é apaixonado pela criação de empresas com fins de propósito. Fundou sua primeira empresa aos 18 anos, durante uma greve de 06 meses na Universidade Federal de Pernambuco. A StandService Arquitetura Promocional começou como uma pequena locadora de móveis e materiais para eventos e, após 08 anos de mercado, se tornou uma das principais montadoras de eventos do Norte/Nordeste, atendendo clientes de todo o país e se tornando referência no setor.</p>
@@ -29,7 +35,9 @@
         </div>
       </li>
       <li class="organizer-item">
-        <h6 class="avatar gleyce-ramos">Gleyce Ramos</h6>
+        <%= link_to "http://br.linkedin.com/pub/gleyce-ramos/32/60a/199/en", target: :blank do %>
+          <h6 class="avatar gleyce-ramos">Gleyce Ramos</h6>
+        <% end %>
         <div class="bio">
           <div class="bio-tooltip">
             <p><strong>Gleyce Ramos</strong> é especialista em pequenos negócios e empreendedorismo. Bacharel em Administração de Empresas, com Pós-Graduação em Gestão de Negócios Internacionais pela FGV (Fundação Getúlio Vargas), Planejamento Estratégico e Gestão Organizacional pela UPE (Universidade de Pernambuco) e MBA em Consultoria para Pequenas Empresas pela USP (Universidade de São Paulo).</p>
@@ -44,31 +52,47 @@
 
   <section class="supporters clearfix">
     <div class="supporter-row clearfix">
-      <h4 class="title">Padroeiros</h4>
-      <ul class="supporters-list">
-        <li><%= link_to "Impact Hub Recife", "http://recife.impacthub.net", class: 'hub-logo' %></li>
-        <li><%= link_to "Estúdio Albie", "https://www.albie.com.br", class: 'albie-logo' %></li>
-        <li><%= link_to "Eloquent Studio", "https://www.facebook.com/geteloquent",  class: 'eloquent-logo' %></li>
+      <h4 class="title col-md-2">Padroeiros</h4>
+      <ul class="supporters-list list-inline col-md-10 padroeiros">
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Impact Hub Recife", "http://recife.impacthub.net", target: :blank, class: 'hub-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Estúdio Albie", "https://www.albie.com.br", target: :blank, class: 'albie-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Eloquent Studio", "https://www.facebook.com/geteloquent", target: :blank,  class: 'eloquent-logo' %>
+        </li>
       </ul>
     </div>
     <div class="supporter-row clearfix">
-      <h4 class="title">Cumpadres</h4>
-      <ul class="supporters-list">
-        <li><%= link_to "C.E.S.A.R", "http://www.cesar.org.br/site/", class: 'cesar-logo' %></li>
+      <h4 class="title col-md-2">Cumpadres</h4>
+      <ul class="supporters-list list-inline col-md-10 cumpadres">
+        <li class="supporters-list-item clearfix">
+          <%= link_to "C.E.S.A.R", "http://www.cesar.org.br/site/", target: :blank, class: 'cesar-logo' %>
+        </li>
       </ul>
     </div>
     <div class="supporter-row clearfix">
-      <h4 class="title">Padrinhos</h4>
-      <ul class="supporters-list padrinhos">
-        <li><%= link_to "18 minutos", "https://www.facebook.com/18minutos", class: 'dezoito-minutos-logo' %></li>
+      <h4 class="title col-md-2">Padrinhos</h4>
+      <ul class="supporters-list list-inline col-md-10 padrinhos">
+        <li class="supporters-list-item clearfix">
+          <%= link_to "18 minutos", "https://www.facebook.com/18minutos", target: :blank, class: 'dezoito-minutos-logo' %>
+        </li>
       </ul>
     </div>
     <div class="supporter-row clearfix">
-      <h4 class="title">Chegados</h4>
-      <ul class="supporters-list chegados">
-        <li><%= link_to "ABA – Global Education", "http://www.abaweb.org/", class: 'aba-logo' %></li>
-        <li><%= link_to "Projeto Vincular", "http://www.projetovincular.com.br/", class: 'vincular-logo' %></li>
-        <li><%= link_to "Tempest Security Intelligence", "http://www.tempest.com.br/", class: 'tempest-logo' %></li>
+      <h4 class="title col-md-2">Chegados</h4>
+      <ul class="supporters-list list-inline col-md-10 chegados">
+        <li class="supporters-list-item clearfix">
+          <%= link_to "ABA – Global Education", "http://www.abaweb.org/", target: :blank, class: 'aba-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Projeto Vincular", "http://www.projetovincular.com.br/", target: :blank, class: 'vincular-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Tempest Security Intelligence", "http://www.tempest.com.br/", target: :blank, class: 'tempest-logo' %>
+        </li>
       </ul>
     </div>
   </section>

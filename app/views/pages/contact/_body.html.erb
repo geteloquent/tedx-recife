@@ -1,5 +1,7 @@
-<section class="step contact-body" id="contact-section" data-x="-540" data-y="330" style="display: none;">
-  <h2 class="clearfix">
+<% hide = false unless local_assigns.has_key? :hide %>
+
+<section class="step contact-body content-section col-md-12" id="contact-section" data-x="-550" data-y="340" style="<%= hide ? 'display: none;' : '' %>">
+  <h2 class="title clearfix">
     <i class="ballon"></i>
     <strong>Fale Conosco</strong>
   </h2>

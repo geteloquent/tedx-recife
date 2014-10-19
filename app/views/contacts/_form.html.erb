@@ -6,17 +6,23 @@
   </ul>
 
   <fieldset>
-    <%= f.label :name, "Nome" %>
-    <%= f.text_field :name, required: true, class: 'input' %>
+    <div class="form-group">
+      <%= f.label :name, "Nome" %>
+      <%= f.text_field :name, required: true, class: 'input form-control' %>
+    </div>
 
-    <%= f.label :email, "Email" %>
-    <%= f.email_field :email, required: true,class: 'input' %>
+    <div class="form-group">
+      <%= f.label :email, "Email" %>
+      <%= f.email_field :email, required: true,class: 'input form-control' %>
+    </div>
 
-    <%= f.label :message, "Mensagem" %>
-    <%= f.text_area :message, rows: 5, required: true, class: 'input' %>
+    <div class="form-group">
+      <%= f.label :message, "Mensagem" %>
+      <%= f.text_area :message, rows: 4, required: true, class: 'input form-control' %>
+    </div>
   </fieldset>
 
   <fieldset class="buttons">
-    <%= f.button "Enviar", class: 'btn-submit' %>
+    <%= f.button "Enviar", class: 'btn-submit btn pull-right' %>
   </fieldset>
 <% end %>

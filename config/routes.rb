@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'high_voltage/pages#show', id: 'index'
+  get 'index-responsive', to: 'application#index'
   resources :contacts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
 

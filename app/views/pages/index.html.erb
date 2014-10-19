@@ -23,7 +23,7 @@
 <% end %>
 
 <div id="impress">
-  <section  id="main-section" class="step main clearfix" data-x="0" data-y="0">
+  <section  id="main-section" class="step main-section clearfix" data-x="0" data-y="0">
     <div class="menu">
       <h2 class="menu-title">Conceito 2014</h2>
       <svg class="main-ball"></svg>
@@ -33,11 +33,11 @@
     <%= render 'pages/executor/animation' %>
     <%= render 'pages/contact/animation' %>
     <%= render 'pages/subscription/animation' %>
-    <div class="banner"></div>
+    <h1 class="banner">TEDx Recife 2014 – Revoluções Silenciosas</h1>
   </section>
-  <%= render 'pages/concept/body' %>
-  <%= render 'pages/executor/body' %>
-  <%= render 'pages/contact/body' %>
-  <%= render 'pages/subscription/body' %>
+  <%= render 'pages/concept/body', hide: true %>
+  <%= render 'pages/executor/body', hide: true %>
+  <%= render 'pages/contact/body', hide: true %>
+  <%= render 'pages/subscription/body', hide: true %>
 </div>
 <%= link_to "Voltar", '#main-section', class: 'back-button' %>
