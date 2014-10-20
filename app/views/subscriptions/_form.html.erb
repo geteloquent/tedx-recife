@@ -1,6 +1,6 @@
-<%= form_for subscription, remote: true, html: { class: 'subscription-form dark-form clearfix col-md-12' } do |f| %>
+<%= form_for subscription, remote: true, html: { class: 'subscription-form dark-form clearfix col-md-12', novalidate: browser.mobile? || browser.tablet? ? true : false } do |f| %>
   <% unless f.object.errors.empty? %>
-    <ul>
+    <ul class="errors">
       <% f.object.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>

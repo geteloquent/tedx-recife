@@ -1,4 +1,4 @@
-<%= form_for contact, remote: true, html: { class: 'contact-form clearfix' } do |f| %>
+<%= form_for contact, remote: true, html: { class: 'contact-form clearfix', novalidate: browser.mobile? || browser.tablet? ? true : false } do |f| %>
   <ul>
     <% f.object.errors.full_messages.each do |message| %>
       <li><%= message %></li>
