@@ -6,9 +6,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>TEDx Recife 2014 <%= yield(:page_title) %></title>
-  <meta name="description" content="">
+  <title>TEDx Recife 2014 – Revoluções Silenciosas <%= yield(:page_title) %></title>
+  <meta name="description" content="Com o tema Revoluções Silenciosas, o TEDxRecife 2014 objetiva identificar as atitudes e mudanças que tem sua gênese no indivíduo, muitas vezes pequenas ações silenciosas e pessoais que quando percebidas por outros ao redor têm potência para transformar a cidade e a sociedade. ">
+  <meta name="keywords" content="ted, tedx, recife, revoluções, silenciosas, 2014, TEDxRecife, cidade, sociedade, indivíduo">
+  <meta name="robot" content="index,nofollow">
+  <meta name="revisit-after" CONTENT="3">
+
   <meta name="viewport" content="width=device-width">
+
+  <meta property="og:title" content="TEDx Recife 2014 – Revoluções Silenciosas">
+  <meta property=”og:type” content="website"/>
+  <meta property="og:image" content="<%= asset_url 'tedx-recife-2014-logo.png' %>">
+  <meta property="og:description" content="Com o tema Revoluções Silenciosas, o TEDxRecife 2014 objetiva identificar as atitudes e mudanças que tem sua gênese no indivíduo, muitas vezes pequenas ações silenciosas e pessoais que quando percebidas por outros ao redor têm potência para transformar a cidade e a sociedade.">
+  <meta property="og:url" content="<%= root_url %>">
+
+  <meta name=”twitter:card” content="summary">
+  <meta name=”twitter:url” content="<%= root_path %>">
+  <meta name=”twitter:title” content="TEDx Recife 2014 – Revoluções Silenciosas">
+  <meta name=”twitter:description” content="Com o tema Revoluções Silenciosas, o TEDxRecife 2014 objetiva identificar as atitudes e mudanças que tem sua gênese no indivíduo, muitas vezes pequenas ações silenciosas e pessoais que quando percebidas por outros ao redor têm potência para transformar a cidade e a sociedade.">
+  <meta name=”twitter:image” content="<%= asset_url 'tedx-recife-2014-logo.png'%>">
+
+  <meta property="place:location:latitude" content="-8.140798">
+  <meta property="place:location:longitude" content="-34.904638">
 
   <%= stylesheet_link_tag "https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css", cache: true %>
   <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -16,6 +35,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body class="<%= yield(:body_classes) %>">
+  <div class="hide" itemscope itemtype="http://data-vocabulary.org/Event">
+    <a href="" itemprop="url" >
+      <span itemprop="summary">TEDx Recife 2014 &ndash; Revolu&ccedil;&otilde;es Silenciosas</span>
+    </a>
+    <img itemprop="photo" src="<%= asset_url 'tedx-recife-2014-logo.png' %>" />
+
+    <span itemprop="description">Com o tema Revolu&ccedil;&otilde;es Silenciosas, o TEDxRecife 2014 objetiva identificar as atitudes e mudan&ccedil;as que tem sua g&ecirc;nese no indiv&iacute;duo, muitas vezes pequenas a&ccedil;&otilde;es silenciosas e pessoais que quando percebidas por outros ao redor t&ecirc;m pot&ecirc;ncia para transformar a cidade e a sociedade.</span>
+
+    When:
+    <time itemprop="startDate" datetime="2014-12-16T15:00-03:00">Dec 16, 3:00PM</time>—
+    <time itemprop="endDate" datetime="2014-12-16T22:00-03:00">Dec 16, 10:00PM</time>
+
+    Where:
+    <span itemprop="location" itemscope itemtype="http://data-vocabulary.org/Organization">
+      <span itemprop="name">Parque Dona Lindu</span>
+      <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+        <span itemprop="street-address">Av. Boa Viagem</span>,
+        <span itemprop="locality">Recife</span>,
+        <span itemprop="region">Pernambuco</span>
+      </span>
+      <span itemprop="geo" itemscope itemtype="http://data-vocabulary.org/Geo">
+        <meta itemprop="latitude" content="-8.140798" />
+        <meta itemprop="longitude" content="-34.904638" />
+      </span>
+    </span>
+
+    Category: <span itemprop="eventType">Conference</span>
+  </div>
 
   <%= render 'shared/global_nav' %>
   <%= yield %>
