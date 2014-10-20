@@ -872,7 +872,7 @@ form {
 }
 
 .main-header {
-  @include replace-text-with-dimensions('tedx-recife-2014-logo.png', 280, 306);
+  @include replace-text-with-dimensions('tedx-recife-2014-logo.png', 280, 367);
   margin: 50px auto 100px auto;
 
   @media (min-width: 767px) {
