@@ -418,6 +418,7 @@ form {
 
   .content-section {
     margin-bottom: 50px;
+    background-position-x: center;
   }
 }
 
@@ -466,7 +467,10 @@ form {
   #impress & { width: 700px; }
 
   .index-responsive & {
-    .last-call { margin-top: 40px; }
+    .last-call {
+      margin-top: 40px;
+      padding-bottom: 60px;
+    }
   }
 
   background: image-url('silent-revolutions.png') no-repeat right bottom;
@@ -872,7 +876,7 @@ form {
 }
 
 .main-header {
-  @include replace-text-with-dimensions('tedx-recife-2014-logo.png', 280, 367);
+  @include replace-text-with-dimensions('tedx-recife-2014-logo.png', 250, 327);
   margin: 50px auto 100px auto;
 
   @media (min-width: 767px) {
