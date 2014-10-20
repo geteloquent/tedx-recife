@@ -544,7 +544,7 @@ form {
 }
 
 .executor-body {
-  #impress & { width: 700px; }
+  #impress & { width: 730px; }
 
   > .title {
     margin-bottom: 16px;
@@ -606,8 +606,6 @@ form {
   .supporters {
     margin-top: 5px;
 
-    .supporter-row { margin-bottom: 15px; }
-
     .title {
       color: #FF2B06;
       border-right: 2px solid #CCCCCC;
@@ -639,7 +637,7 @@ form {
         }
       }
 
-      &.padrinhos { margin-top: 6px; }
+      &.padrinhos { margin-top: 3px; }
       &.chegados { margin-top: 10px; }
 
       .supporters-list-item {
@@ -671,6 +669,12 @@ form {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/eloquent-logo.png', 104, 46);
         margin-top: 13px;
+      }
+
+      .alfred-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/alfred-logo.png', 111, 30);
+        margin-bottom: 10px;
       }
 
       .cesar-logo {
