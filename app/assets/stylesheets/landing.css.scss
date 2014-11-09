@@ -550,7 +550,7 @@ form {
 }
 
 .executor-body {
-  #impress & { width: 730px; }
+  #impress & { width: 900px; }
 
   > .title {
     margin-bottom: 16px;
@@ -694,6 +694,17 @@ form {
         margin-bottom: 7px;
       }
 
+      .orbe-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/orbe-logo.png');
+        margin-bottom: 7px;
+      }
+
+      .elefante-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/elefante-logo.png');
+      }
+
       .dezoito-minutos-logo {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/18-minutos-logo.png', 69, 62);
@@ -712,6 +723,17 @@ form {
       .tempest-logo {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/tempest-logo.png', 124, 47);
+      }
+
+      .hip-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/hip-logo.png');
+        margin-top: 2px;
+      }
+
+      .da-fonte-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/da-fonte-logo.png');
       }
     }
   }

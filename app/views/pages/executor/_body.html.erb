@@ -1,6 +1,6 @@
 <% hide = false unless local_assigns.has_key? :hide %>
 
-<section class="step executor-body col-md-12" id="executor-section" data-x="-570" data-y="-350" style="<%= hide ? 'display: none;' : '' %>">
+<section class="step executor-body col-md-12" id="executor-section" data-x="-570" data-y="-410" style="<%= hide ? 'display: none;' : '' %>">
   <h2 class="title clearfix">
     <i class="flag"></i>
     <strong>Realização</strong>
@@ -66,6 +66,9 @@
         <li class="supporters-list-item clearfix">
           <%= link_to "ALFRED", "http://www.alfred.tv.br", target: :blank,  class: 'alfred-logo' %>
         </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "18 minutos", "https://www.facebook.com/18minutos", target: :blank, class: 'dezoito-minutos-logo' %>
+        </li>
       </ul>
     </div>
     <div class="supporter-row clearfix">
@@ -77,13 +80,11 @@
         <li class="supporters-list-item clearfix">
           <%= link_to "VIVO", "http://www.vivo.com.br/", target: :blank, class: 'vivo-logo' %>
         </li>
-      </ul>
-    </div>
-    <div class="supporter-row clearfix">
-      <h4 class="title col-md-2">Padrinhos</h4>
-      <ul class="supporters-list list-inline col-md-10 padrinhos">
         <li class="supporters-list-item clearfix">
-          <%= link_to "18 minutos", "https://www.facebook.com/18minutos", target: :blank, class: 'dezoito-minutos-logo' %>
+          <%= link_to "Orbe", "http://www.orbeplan.com.br/", target: :blank, class: 'orbe-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "Elefante – Coletivo Criativo", "http://elefante.cc/", target: :blank, class: 'elefante-logo' %>
         </li>
       </ul>
     </div>
@@ -98,6 +99,12 @@
         </li>
         <li class="supporters-list-item clearfix">
           <%= link_to "Tempest Security Intelligence", "http://www.tempest.com.br/", target: :blank, class: 'tempest-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "HIP – High Impact Presentations", "http://hipbrasil.com.br/", target: :blank, class: 'hip-logo' %>
+        </li>
+        <li class="supporters-list-item clearfix">
+          <%= link_to "da Fonte, advogados", "http://www.dafonteadv.com.br/", target: :blank, class: 'da-fonte-logo' %>
         </li>
       </ul>
     </div>
