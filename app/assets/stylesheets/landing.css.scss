@@ -735,6 +735,11 @@ form {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/da-fonte-logo.png');
       }
+
+      .backer-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/backer-logo.png');
+      }
     }
   }
 }
