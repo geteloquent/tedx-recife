@@ -1,0 +1,40 @@
+<%= content_for :page_title, ' – Talks do TEDx Recife 2014' %>
+
+<% content_for :body_classes do %>
+  about-talks
+<% end %>
+
+<div class="container">
+  <div class="visible-lg">
+    <%= render 'shared/symbol' %>
+    <%= link_to "Voltar", root_path, class: 'back-button symbol-label' %>
+  </div>
+  <%= link_to "Voltar", root_path, class: 'back-button hidden-lg' %>
+
+  <div class="row">
+    <section class="main clearfix">
+      <h2 class="col-md-12 col-xs-10">Palestrantes</h2>
+
+      <ol class="list-unstyled">
+        <% talks.each do |(_, talk)| %>
+          <li class="talks-list-item col-md-6 col-xs-12 col-sm-12 col-lg-5">
+            <div class="header clearfix">
+              <div class="speaker-photo pull-left">
+                <%= image_tag "talks/speakers/#{talk['speaker']['photo']}" %>
+              </div>
+              <div class="info col-md-8 col-xs-7 col-sm-9">
+                <%= content_tag :i, nil, class: "icon #{talk['icon']}-icon" %>
+                <h5 class="call"><%= talk['call'].html_safe %></h4>
+                <h4 class="title"><%= talk['title'] %></h4>
+              </div>
+            </div>
+            <div class="about-speaker clearfix">
+              <h4><%= talk['speaker']['name'] %></h4>
+              <p class="bio"><%= talk['speaker']['bio'] %></p>
+            </div>
+          </li>
+        <% end %>
+      </ol>
+    </section>
+  </div>
+</div>

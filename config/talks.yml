@@ -1,0 +1,89 @@
+talks:
+  clarice-freire:
+    icon: literature
+    call: "Um novo olhar <br/> sobre a literatura"
+    title: Poesia para se ler deitado nas "redes".
+    speaker:
+      name: Clarice Freire
+      photo: clarice.png
+      bio: Publicitária, escritora e criadora do blog “Pó de Lua”. Nele rabisca sua poesia com pensamentos delicados, humor sutil e traço despretensioso, que combina desenho e até fragmentos de palavras. Assim conquistou mais de 1 milhão e 200 mil seguidores no Facebook e mais de 100 mil no Instagram. Da internet para as páginas de um livro homônimo, lançado em 2014 pela editora Intrínseca, seu trabalho já ocupa as prateleira das livrarias e este já habita as listas dos livros mais vendidos do país.
+  edilson-lima:
+    icon: sustainability
+    call: "Um novo olhar <br/> sobre a sustentabilidade"
+    title: Dando nó em pingo d'água.
+    speaker:
+      name: Edilson Tavares de Lima
+      photo: edilson.png
+      bio: Presidente do Núcleo Gestor da Cadeia Têxtil e de Confecções em Pernambuco,  foi fundador e 1° Presidente da ACIT (Associação Comercial e Industrial de Toritama). Entre outros empreendimentos, Edilson Tavares é dono da Lavanderia Mamute,  lavanderia que implantou um sistema de reciclagem d'água no interior de Pernambuco, área atingida pela seca e com intensa produção na área têxtil.
+  gabriel-marquim:
+    icon: spirituality
+    call: "Um novo olhar <br/> sobre a espiritualidade"
+    title: Meu encontro revolucionário com a fé.
+    speaker:
+      name: Gabriel Marquim
+      photo: gabriel.png
+      bio: Mestre em Comunicação pela Universidade Federal de Pernambuco, Jornalista e professor universitário. É fundador da Comunidade dos Viventes e do Projeto Vincular. Mas seu maior desejo é continuar vivendo o Sonho que realizou um revolução em sua vida e que, aos poucos, tornou-se o Sonho e a revolução de outros.
+  deborah-zanforlin:
+    icon: hope
+    call: "Um novo olhar <br/> sobre a esperança"
+    title: Biossensores, o sonho de uma vida longa e saudável.
+    speaker:
+      name: Deborah Zanforlin
+      photo: deborah.png
+      bio: Biomédica por formação, atualmente encontra-se no doutorado na Universidade Federal de Pernambuco na área biotecnologia e nanotecnologia visando a criação de sistema de diagnóstico rápidos e seguros para doenças que ainda perturbam nossa sociedade, dentre elas o câncer.  Deborah se dedica a realizar o sonho de uma vida longa e saudável através da cura de doenças por meio de biossensores.
+  fernando-felix:
+    icon: overcoming
+    call: "Um novo olhar <br/> sobre a superação"
+    title: Os Cavaleiros do Apocalipse.
+    speaker:
+      name: Fernando Félix
+      photo: fernando-felix.png
+      bio: "Em sua atuação no Banco Mundial, foi responsável pela implantação da Rede Global para intercâmbio de experiências de desenvolvimento local com o mundo: Global Development Learning Network - GDLN. Foi consultor na estruturação do Centro Nacional de aprendizagem na Rússia para grupo de 25 lideres e representantes de empresas públicas, ligadas às nações que anteriormente compunham a chamada União Soviética. Presidiu o Instituto de Planejamento de Pernambuco (CONDEPE), esteve à frente da consultoria do Inter American Institute for Cooperation on Agriculture (IICA), entre vários outros trabalhos. Atualmente, Fernando Felix é Consultor da Novarth - Consultoria em Inovação."
+  fernando-holanda:
+    icon: politics
+    call: "Um novo olhar <br/> sobre a política"
+    title: E você, faz política?
+    speaker:
+      name: Fernando de Holanda
+      photo: fernando-holanda.png
+      bio: Publicitário, administrador e professor. Dedica-se há 10 anos à gestão baseada no círculo da qualidade (PDCA) e na educação corporativa para resultados. É Coordenador do Grupo de Trabalho de Educação do Observatório do Recife, um movimento da sociedade civil organizada ligada à Rede Social Brasileira de Cidades Justas e Sustentáveis. Participa ainda da RAPS - Rede de Ação Política pela Sustentabilidade - uma ONG comprometida com a formação dos futuros líderes políticos do Brasil, comprometidos com a ética e a sustentabilidade.
+  francisco-cunha:
+    icon: mobility
+    call: "Um novo olhar <br/> sobre a mobilidade"
+    title: Ei, devolve a minha calçada!
+    speaker:
+      name: Francisco Cunha
+      photo: francisco.png
+      bio: Arquiteto, sócio-fundador da TGI Consultoria em Gestão e do INTG – Instituto da Gestão, presidente licenciado do Conselho Editorial e articulista da Algomais . Consultor em gestão empresarial nas áreas de estratégia, estrutura organizacional e equipes de trabalho com serviços prestados a centenas de empresa e instituições públicas regionais e nacionais. Coautor de dez livros sobre gestão estratégica e um sobre a história e o desenvolvimento de Pernambuco (Pernambuco Afortunado – da Nova Lusitânia à Nova Economia).
+  ruy-belfort:
+    icon: education
+    call: "Um novo olhar <br/> sobre a educação"
+    title: A revolução da atitude.
+    speaker:
+      name: Ruy Belfort
+      photo: ruy.png
+      bio: Comunicólogo graduado pela Universidade Católica de Pernambuco, especialista em modelagem de negócios pela Fundação Dom Cabral (FDC) e mestre em design para experiência de usuário pela Universidade Federal de Pernambuco (UFPE). Esteve, desde o início da carreira, envolvido em grandes projetos do Porto Digital, considerado o principal cluster de economia criativa do País com passagens pela Secretaria de Ciência, Tecnologia e Meio Ambiente (Sectma) do Estado, Jynx Playware e nas Organizações Globo onde liderou um time de inovação. Recentemente, tornou-se sócio da Bemind e voltou a Recife, onde, entre outros projetos, empreende o iCANamy, cujo objetivo é revolucionar a educação.
+  thiana-santos:
+    icon: art
+    call: "Um novo olhar <br/> sobre a arte"
+    title: O Descarte que vira Arte.
+    speaker:
+      name: Thiana Santos
+      photo: thiana.png
+      bio: Artista Plástica cursou Belas Artes na UFBA em 1986 na cidade de Salvador/BA. Desenvolve seu trabalho com o foco no design sustentável. Trabalha de forma independente, com projetos de consultoria em comunidades, da pesquisa ao desenvolvimento de produtos artesanais. Há alguns anos, vem desenvolvendo novas técnicas de trabalho para o reuso de garrafas Pet e outros materiais reutilizáveis, aplicando os conceitos de eco design.
+  verena-petitinga:
+    icon: woman
+    call: "Um novo olhar sobre o <br/> empreendedorismo feminino"
+    title: "\"Cadê as mulheres?\""
+    speaker:
+      name: Verena Petitinga
+      photo: verena.png
+      bio: Empreendedora e consultora em Negócios Digitais, Inovação e Criatividade. Está a frente do Winspiration, rede voltada a mulheres lideres e empreendedoras. Nos últimos quinze anos, liderou a criação de novos produtos e negócios para marcas, empresas e startups em diferentes cidades do Brasil. Em cada uma delas, descobriu novas culturas e novos sotaques – e, desde então, sempre busca conhecer novas pessoas e líderes com diferentes histórias e experiências. Trabalhou em empresas como Organizações Globo/Infoglobo, UOL, Agência Click, Rede Bahia e 21212.
+  wilson-junior:
+    icon: medicine
+    call: "Um novo olhar <br/> sobre a medicina"
+    title: Você pode me ouvir, doutor?
+    speaker:
+      name: Wilson de Oliveira Junior
+      photo: dr-wilson.png
+      bio: Professor adjunto de cardiologia da UPE, Mestre, idealizador e fundador do Ambulatório da doença de Chagas e insuficiência cardíaca de Pró-Cape, foi presidente da Associação Brasileira de Medicina Psicossomática de e é idealizador da Ampare há 13 anos.

@@ -161,6 +161,155 @@ body {
   }
 }
 
+
+.about-talks {
+  $minWidth: 480px;
+
+  @media (min-width: 768px) {
+    background: url(/assets/talks-ballons.png) no-repeat -4px -2px;
+  }
+
+  @media (max-width: 767px) {
+    background-position-y: 50px;
+  }
+
+  .navbar {
+    @media (max-width: 767px) {
+      & { min-width: $minWidth; }
+    }
+  }
+
+  .container {
+    padding-top: 100px;
+
+    @media (max-width: 767px) {
+      & { min-width: $minWidth; }
+
+      background: url(/assets/talks-ballons.png) no-repeat -4px -2px;
+      margin-top: -22px;
+    }
+  }
+
+  .talks-list-item {
+    margin-bottom: 50px;
+
+    @media (min-width: 991px) {
+      &:nth-child(even) { float: right; }
+      &:nth-child(odd) { clear: left; }
+    }
+
+    @media (max-width: 767px) {
+      min-width: $minWidth;
+    }
+  }
+
+  .icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    &.art-icon { background-image: image-url('talks/art-icon.png'); }
+    &.education-icon { background-image: image-url('talks/education-icon.png'); }
+    &.hope-icon { background-image: image-url('talks/hope-icon.png'); }
+    &.literature-icon { background-image: image-url('talks/literature-icon.png'); }
+    &.medicine-icon { background-image: image-url('talks/medicine-icon.png'); }
+    &.mobility-icon { background-image: image-url('talks/mobility-icon.png'); }
+    &.overcoming-icon { background-image: image-url('talks/overcoming-icon.png'); }
+    &.politics-icon { background-image: image-url('talks/politics-icon.png'); }
+    &.spirituality-icon { background-image: image-url('talks/spirituality-icon.png'); }
+    &.sustainability-icon { background-image: image-url('talks/sustainability-icon.png'); }
+    &.woman-icon { background-image: image-url('talks/woman-icon.png'); }
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+  }
+
+  .header {
+    .info {
+      background: image-url('talks/down-arrow.png') no-repeat center right;
+      max-height: 170px;
+
+    }
+
+    &:before {
+      @extend .triangle;
+
+      border-width: 30px 0 0 30px;
+      border-color: transparent transparent transparent rgb(246, 222, 219);
+      top: 140px;
+    }
+  }
+
+  .call {
+    color: rgb(156, 41, 32);
+    font-weight: normal;
+  }
+  .title { color: rgb(239, 69, 45); }
+  .about-speaker {
+    background-color: rgb(246, 222, 219);
+    color: rgb(131, 131, 132);
+    padding: 30px;
+
+    &:before {
+      @extend .triangle;
+
+      border-width: 60px 0 0 60px;
+      border-color: transparent transparent transparent white;
+      bottom: -1px;
+      margin-left: -31px;
+    }
+
+    &:after {
+      @extend .triangle;
+
+      border-width: 0 60px 60px 0;
+      border-color: transparent white transparent transparent;
+      right: 0;
+      margin-right: 14px;
+      top: -1px;
+      margin-top: 170px;
+    }
+  }
+
+  .symbol {
+    position: fixed;
+    top: 50%;
+    margin-top: -50px;
+    left: 50%;
+    margin-left: -50px;
+  }
+
+  .back-button.symbol-label {
+    display: block;
+    position: fixed;
+    width: 44px;
+    left: 50%;
+    margin-left: -22px;
+    top: 50%;
+    margin-top: 60px;
+
+    &:before { display: none; }
+  }
+
+  .back-button {
+    display: block;
+    position: absolute;
+    bottom: inherit;
+    left: inherit;
+    right: 0;
+    margin-top: 25px;
+    margin-right: 80px;
+
+    @media (max-width: 768px) {
+      margin-right: 15px;
+    }
+  }
+}
+
 .global-nav {
   $width: 440px;
 
@@ -509,6 +658,11 @@ form {
 
   }
 
+  .talks-link {
+    color: rgb(255, 43, 6);
+
+    &:hover { color: #9e2515; }
+  }
   .last-call { margin-bottom: 0; }
 }
 
