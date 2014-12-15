@@ -4,6 +4,22 @@
       <div class="col-md-12">
         <h1 class="main-header">TEDx Recife 2014 – Revoluções Silenciosas</h1>
       </div>
+      <ul class="list-unstyled big-day-links">
+        <li>
+          <%= link_to page_path('talks'), class: 'talks-link' do %>
+            <i class="fa fa-users"></i>
+            Confira os talks deste ano
+          <% end %>
+        </li>
+        <li>
+          <%= link_to livestream_path, class: 'livestream-link', target: :blank do %>
+            <i class="fa fa-video-camera"></i>
+            <span class="call">Assista em Livestream!</span>
+          <% end %>
+        </li>
+      </ul>
+
+
       <%= render 'pages/concept/body' %>
       <%= render 'pages/subscription/body' %>
       <%= render 'pages/executor/body' %>

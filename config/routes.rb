@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'index-responsive', to: 'application#index'
   resources :contacts, only: [:new, :create]
   resources :subscriptions, only: [:new, :create]
+  get :livestream, to: redirect('https://new.livestream.com/tedx/recife')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -44,6 +44,13 @@ body {
           }
         }
 
+        &.talks-logo {
+          a {
+            background-image: image-url('talks-logo-nav-white.png');
+            background-position-y: -1px;
+          }
+        }
+
         &.tedx-logo {
           a {
             background-image: image-url('tedx-logo-nav-white.png');
@@ -51,7 +58,7 @@ body {
           }
         }
 
-        &.tedx-recife-logo {
+        &.tedx-recife-logo, &.livestream-logo {
           a {
             background-position-y: -3px;
           }
@@ -311,7 +318,7 @@ body {
 }
 
 .global-nav {
-  $width: 440px;
+  $width: 750px;
 
   @media (min-width: 768px) {
     & {
@@ -345,6 +352,23 @@ body {
         }
       }
 
+      &.talks-logo {
+        a {
+          display: block;
+          @include replace-text-with-dimensions('talks-logo-nav.png', 88, 46);
+        }
+      }
+
+      &.livestream-logo {
+        margin-left: -30px;
+
+        a {
+          display: block;
+          @include replace-text-with-dimensions('livestream-logo-nav.png', 268, 48);
+          background-position-y: -1px;
+        }
+      }
+
       &.tedx-logo {
         a {
           display: block;
@@ -364,6 +388,27 @@ body {
     }
   }
 }
+
+/*.livestream-link {
+  position: absolute;
+  display: block;
+  font-weight: bold;
+  right: 0;
+  margin-right: 10px;
+  bottom: 0;
+
+  &, &:visited { color: rgb(255, 43, 6); }
+  &:hover {
+    color: #9e2515;
+    text-decoration: none;
+  }
+
+  .fa {
+    font-size: 1.5em;
+    margin-right: 5px;
+  }
+  .call { font-size: 1.5em; }
+}*/
 
 .back-button {
   display: none;
@@ -563,6 +608,12 @@ form {
   }
 }
 
+.talks-link, .livestream-link {
+  color: rgb(255, 43, 6);
+
+  &:hover { color: #9e2515; }
+}
+
 .index-responsive {
   background-image: image-url('dashed-grain.png');
   color: #7C7C7C;
@@ -570,6 +621,18 @@ form {
   .content-section {
     margin-bottom: 50px;
     background-position-x: center;
+  }
+
+  .big-day-links {
+    margin-bottom: 60px;
+    margin-top: -20px;
+
+    li { margin-bottom: 20px; }
+  }
+
+  .talks-link, .livestream-link {
+    display: block;
+    text-align: center;
   }
 }
 
@@ -656,12 +719,6 @@ form {
       margin-top: 9px;
     }
 
-  }
-
-  .talks-link {
-    color: rgb(255, 43, 6);
-
-    &:hover { color: #9e2515; }
   }
   .last-call { margin-bottom: 0; }
 }
