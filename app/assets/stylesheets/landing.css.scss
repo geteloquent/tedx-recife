@@ -863,6 +863,12 @@ form {
 
         margin-right: 10px;
         &:last-child .logo { margin-right: 0; }
+
+        &.g1-pe-item {
+          display: block;
+
+          .index-responsive & { display: inline-block; }
+        }
       }
 
       .logo {
@@ -914,6 +920,17 @@ form {
       .elefante-logo {
         @extend .logo;
         @include replace-text-with-dimensions('sponsors/elefante-logo.png');
+      }
+
+      .globo-ne-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/globo-ne-logo.png');
+      }
+
+      .g1-pe-logo {
+        @extend .logo;
+        @include replace-text-with-dimensions('sponsors/g1-pe-logo.png');
+        margin-bottom: 7px;
       }
 
       .dezoito-minutos-logo {
